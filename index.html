@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeros Auxilios - Guía ACHS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .lang-switch {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .lang-switch button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            background-color: #eee;
+            padding: 10px 0;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #007bff;
+            color: white;
+        }
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+        h2 {
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 1.8em;
+        }
+        h3 {
+            color: #0069d9;
+            font-size: 1.4em;
+        }
+        h4 {
+            color: #0056b3;
+            font-size: 1.2em;
+        }
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+        ol {
+            list-style: decimal;
+            margin-left: 20px;
+        }
+        .rpp-section {
+            background-color: #d4edda;
+            border-color: #28a745;
+            padding: 25px;
+            margin-top: 30px;
+        }
+        .rpp-section h2 {
+            color: #155724;
+            border-color: #155724;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+        .warning {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        .info-box {
+            background-color: #e9f5ff;
+            border-left: 5px solid #007bff;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="lang-switch">
+            <button onclick="toggleLanguage()">English / Español</button>
+        </div>
+        <h1 data-lang="es">Guía de Primeros Auxilios ACHS</h1>
+        <h1 data-lang="en" style="display:none;">ACHS First Aid Guide</h1>
+    </header>
+
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#introduccion" data-lang="es">Introducción</a><a href="#introduccion" data-lang="en" style="display:none;">Introduction</a></li>
+                <li><a href="#generalidades" data-lang="es">Generalidades</a><a href="#generalidades" data-lang="en" style="display:none;">Generalities</a></li>
+                <li><a href="#lesiones-traumaticas" data-lang="es">Lesiones Traumáticas</a><a href="#lesiones-traumaticas" data-lang="en" style="display:none;">Traumatic Injuries</a></li>
+                <li><a href="#quemaduras" data-lang="es">Quemaduras</a><a href="#quemaduras" data-lang="en" style="display:none;">Burns</a></li>
+                <li><a href="#hemorragias" data-lang="es">Hemorragias</a><a href="#hemorragias" data-lang="en" style="display:none;">Hemorrhages</a></li>
+                <li><a href="#shock" data-lang="es">Shock</a><a href="#shock" data-lang="en" style="display:none;">Shock</a></li>
+                <li><a href="#paro-cardiorrespiratorio" data-lang="es">Paro Cardiorrespiratorio (RCP)</a><a href="#paro-cardiorrespiratorio" data-lang="en" style="display:none;">Cardiorespiratory Arrest (CPR)</a></li>
+                <li><a href="#envenenamientos" data-lang="es">Envenenamientos e Intoxicaciones</a><a href="#envenenamientos" data-lang="en" style="display:none;">Poisoning and Intoxications</a></li>
+                <li><a href="#transporte" data-lang="es">Estabilización y Transporte</a><a href="#transporte" data-lang="en" style="display:none;">Stabilization and Transport</a></li>
+                <li><a href="#desastres" data-lang="es">Desastres</a><a href="#desastres" data-lang="en" style="display:none;">Disasters</a></li>
+                <li><a href="#miscelaneas" data-lang="es">Misceláneas</a><a href="#miscelaneas" data-lang="en" style="display:none;">Miscellaneous</a></li>
+                <li><a href="#talleres" data-lang="es">Talleres Prácticos</a><a href="#talleres" data-lang="en" style="display:none;">Practical Workshops</a></li>
+            </ul>
+        </nav>
+
+        <section id="introduccion">
+            <h2 data-lang="es">Introducción</h2>
+            <h2 data-lang="en" style="display:none;">Introduction</h2>
+            <p data-lang="es">A diario enfrentamos diversas situaciones, algunas más difíciles que otras, para las cuales debemos tener una respuesta apropiada. La falta de preparación puede llevar a respuestas improvisadas e incompletas. La máxima emergencia individual es el Paro Cardiorrespiratorio, donde una acción incorrecta o la inacción resultan en la muerte en menos de cinco minutos.</p>
+            <p data-lang="en" style="display:none;">Daily we face diverse situations, some more difficult than others, for which we must have an appropriate response. Lack of preparation can lead to improvised and incomplete responses. The ultimate individual emergency is Cardiorespiratory Arrest, where incorrect action or inaction results in death in less than five minutes.</p>
+        </section>
+
+        <section id="generalidades">
+            <h2 data-lang="es">Capítulo I: Generalidades</h2>
+            <h2 data-lang="en" style="display:none;">Chapter I: Generalities</h2>
+            <h3><span data-lang="es">TRAUMA</span><span data-lang="en" style="display:none;">TRAUMA</span></h3>
+            <p data-lang="es">El trauma se define como una situación en la que un individuo, debido a violencia externa, sufre lesiones que pueden comprometer uno o más sistemas orgánicos, ocasionando apremio vital. Es la tercera causa de mortalidad general en Chile, la primera causa de hospitalización en hombres, y la primera causa de muerte en personas en edad productiva (15 a 50 años). La mayoría de los accidentes ocurren en el hogar.</p>
+            <p data-lang="en" style="display:none;">Trauma is defined as a situation in which an individual, due to external violence, suffers injuries that can compromise one or more organic systems, causing vital distress. It is the third cause of general mortality in Chile, the first cause of hospitalization in men, and the first cause of death in people of productive age (15 to 50 years). Most accidents occur at home.</p>
+            
+            <h3><span data-lang="es">Primeros Auxilios</span><span data-lang="en" style="display:none;">First Aid</span></h3>
+            <p data-lang="es">Los Primeros Auxilios son un conjunto de acciones simples y directas, proporcionadas en el lugar del accidente por personas comunes con un mínimo de conocimientos. Esta atención es temporal y de emergencia, y debe durar solo hasta que la víctima no presente peligro vital o sea entregada a personal de salud. Siempre después de esta primera atención, la víctima debe ser evaluada por un médico.</p>
+            <p data-lang="en" style="display:none;">First Aid consists of a set of simple, direct actions provided at the scene of an accident by ordinary individuals with basic knowledge. This care is temporary and emergency-based, and should only last until the victim is no longer in vital danger or is handed over to healthcare personnel. After this initial care, the victim must always be evaluated by a doctor.</p>
+            
+            <h4><span data-lang="es">Propósitos del estudio de Primeros Auxilios</span><span data-lang="en" style="display:none;">Purposes of First Aid Study</span></h4>
+            <ul>
+                <li data-lang="es"><strong>Prevención de accidentes:</strong> Educar sobre peligros.</li>
+                <li data-lang="en" style="display:none;"><strong>Accident Prevention:</strong> Educating about dangers.</li>
+                <li data-lang="es"><strong>Capacitación del personal:</strong> Asegurar una correcta actuación.</li>
+                <li data-lang="en" style="display:none;"><strong>Personnel Training:</strong> Ensuring correct action.</li>
+                <li data-lang="es"><strong>Prevención del agravamiento de lesiones:</strong> Enseñar qué hacer y qué no hacer.</li>
+                <li data-lang="en" style="display:none;"><strong>Prevention of Worsening Injuries:</strong> Teaching what to do and what not to do.</li>
+                <li data-lang="es"><strong>Procurar transporte adecuado:</strong> Traslado siguiendo normas y al centro mejor dotado.</li>
+                <li data-lang="en" style="display:none;"><strong>Ensuring Adequate Transport:</strong> Transporting according to established norms and to the best-equipped center.</li>
+            </ul>
+
+            <h4><span data-lang="es">Actitud del público frente a emergencias</span><span data-lang="en" style="display:none;">Public Attitude towards Emergencies</span></h4>
+            <ul>
+                <li data-lang="es">Confusión que bordea la histeria: 20%</li>
+                <li data-lang="en" style="display:none;">Confusion bordering on hysteria: 20%</li>
+                <li data-lang="es">Indiferencia: 60%</li>
+                <li data-lang="en" style="display:none;">Indifference: 60%</li>
+                <li data-lang="es">Calma y juicio, actúa con rapidez: 20%</li>
+                <li data-lang="en" style="display:none;">Calmness and judgment, acts quickly: 20%</li>
+            </ul>
+            <p data-lang="es">Si la gente estuviera preparada, el resultado sería indiscutiblemente mejor.</p>
+            <p data-lang="en" style="display:none;">If people were prepared, the outcome would undeniably be better.</p>
+
+            <h4><span data-lang="es">Requisitos del Auxiliador</span><span data-lang="en" style="display:none;">First Aider Requirements</span></h4>
+            <ul>
+                <li data-lang="es">Ser una persona común.</li>
+                <li data-lang="en" style="display:none;">Be an ordinary person.</li>
+                <li data-lang="es">Capaz de "ver" todo, evitar "visión de túnel".</li>
+                <li data-lang="en" style="display:none;">Able to "see" everything, avoid "tunnel vision".</li>
+                <li data-lang="es">Mesurado y sensato, saber cuándo no hacer nada es importante.</li>
+                <li data-lang="en" style="display:none;">Measured and sensible, knowing when doing nothing is important.</li>
+                <li data-lang="es">Capaz de liderar la situación, asignar tareas y dar seguridad.</li>
+                <li data-lang="en" style="display:none;">Capable of leading the situation, assigning tasks, and providing safety.</li>
+            </ul>
+
+            <h4><span data-lang="es">Clasificación de accidentes</span><span data-lang="en" style="display:none;">Accident Classification</span></h4>
+            <ul>
+                <li data-lang="es"><strong>I. Accidentes del hogar o domésticos:</strong> Más frecuentes, afectan a niños, quemaduras en la cocina.</li>
+                <li data-lang="en" style="display:none;"><strong>I. Home or Domestic Accidents:</strong> Most frequent, affecting children, burns in the kitchen.</li>
+                <li data-lang="es"><strong>II. Accidentes del trabajo:</strong> Mayoría en pequeña minería, lunes es el día con más accidentes.</li>
+                <li data-lang="en" style="display:none;"><strong>II. Work Accidents:</strong> Majority in small mining, Monday is the day with most accidents.</li>
+                <li data-lang="es"><strong>III. Accidentes de tránsito:</strong> Causas por conductor, peatón, o vías.</li>
+                <li data-lang="en" style="display:none;"><strong>III. Traffic Accidents:</strong> Caused by driver, pedestrian, or roads.</li>
+                <li data-lang="es"><strong>IV. Intoxicaciones:</strong> Accidental, profesional, suicidios, etc.</li>
+                <li data-lang="en" style="display:none;"><strong>IV. Intoxications:</strong> Accidental, professional, suicides, etc.</li>
+                <li data-lang="es"><strong>V. Emponzoñamientos:</strong> Picaduras/mordeduras de insectos/animales, venenos vegetales.</li>
+                <li data-lang="en" style="display:none;"><strong>V. Envenomations:</strong> Insect/animal bites/stings, plant poisons.</li>
+                <li data-lang="es"><strong>VI. Quemaduras:</strong> Lesiones por agentes térmicos, químicos, etc.</li>
+                <li data-lang="en" style="display:none;"><strong>VI. Burns:</strong> Injuries caused by thermal, chemical, etc. agents.</li>
+                <li data-lang="es"><strong>VII. Congelamientos:</strong> Poco frecuentes, en prácticas deportivas.</li>
+                <li data-lang="en" style="display:none;"><strong>VII. Freezing:</strong> Infrequent, in sports practices.</li>
+                <li data-lang="es"><strong>VIII. Inmersión:</strong> Causa de muchas muertes estivales, fácil prevención con educación.</li>
+                <li data-lang="en" style="display:none;"><strong>VIII. Immersion:</strong> Cause of many summer deaths, easily preventable with education.</li>
+                <li data-lang="es"><strong>IX. Muertes violentas:</strong> Tercera causa de mortalidad general en chilenos, primera en edad productiva.</li>
+                <li data-lang="en" style="display:none;"><strong>IX. Violent Deaths:</strong> Third leading cause of general mortality in Chileans, first in productive age.</li>
+            </ul>
+
+            <h4><span data-lang="es">Normas generales a seguir en caso de accidentes</span><span data-lang="en" style="display:none;">General rules to follow in case of accidents</span></h4>
+            <h5><span data-lang="es">Aproximación al sitio del accidente:</span><span data-lang="en" style="display:none;">Approach to the accident site:</span></h5>
+            <p data-lang="es">Detectar peligros (físicos, químicos, eléctricos, sociales). Evaluar el entorno, buscando situaciones peligrosas para rescatistas (muros inestables, derrames, cables).</p>
+            <p data-lang="en" style="display:none;">Detect dangers (physical, chemical, electrical, social). Evaluate the environment, looking for dangerous situations for rescuers (unstable walls, spills, cables).</p>
+            
+            <h5><span data-lang="es">Cuidados básicos:</span><span data-lang="en" style="display:none;">Basic Care:</span></h5>
+            <ol>
+                <li data-lang="es"><strong>Reconocimiento de lesiones:</strong> Atender en este orden:
+                    <ul>
+                        <li data-lang="es"><strong>A. Despejar vía aérea:</strong> Prioritario, inmovilizar columna cervical.</li>
+                        <li data-lang="en" style="display:none;"><strong>A. Clear Airway:</strong> Priority, immobilize cervical spine.</li>
+                        <li data-lang="es"><strong>B. Ayudar en la respiración:</strong> Boca a boca.</li>
+                        <li data-lang="en" style="display:none;"><strong>B. Assist with Breathing:</strong> Mouth-to-mouth.</li>
+                        <li data-lang="es"><strong>C. Evaluar actividad cardíaca:</strong> Verificar pulso carotídeo, observar sangramientos y signos de shock (ojos sin brillo, pupilas dilatadas, respiración irregular, náuseas, pulso débil y rápido, piel pálida, fría, húmeda).</li>
+                        <li data-lang="en" style="display:none;"><strong>C. Evaluate Cardiac Activity:</strong> Check carotid pulse, observe bleeding and signs of shock (dull eyes, dilated pupils, irregular breathing, nausea, weak and rapid pulse, pale, cold, clammy skin).</li>
+                        <li data-lang="es"><strong>D. Evaluación de daño neurológico (A.V.D.N.):</strong>
+                            <ul>
+                                <li data-lang="es"><strong>A:</strong> Alerta, consciente.</li>
+                                <li data-lang="en" style="display:none;"><strong>A:</strong> Alert, conscious.</li>
+                                <li data-lang="es"><strong>V:</strong> Responde a la voz.</li>
+                                <li data-lang="en" style="display:none;"><strong>V:</strong> Responds to voice.</li>
+                                <li data-lang="es"><strong>D:</strong> Responde a estímulos dolorosos.</li>
+                                <li data-lang="en" style="display:none;"><strong>D:</strong> Responds to painful stimuli.</li>
+                                <li data-lang="es"><strong>N:</strong> No hay respuesta.</li>
+                                <li data-lang="en" style="display:none;"><strong>N:</strong> No response.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li data-lang="es"><strong>Observaciones en personas inconscientes:</strong>
+                    <ul>
+                        <li data-lang="es">Pérdida de conocimiento: sospecha de traumatismo de cráneo.</li>
+                        <li data-lang="en" style="display:none;">Loss of consciousness: suspected head trauma.</li>
+                        <li data-lang="es">Decoloración de labios: sospecha de intoxicación, shock.</li>
+                        <li data-lang="en" style="display:none;">Lip discoloration: suspected poisoning, shock.</li>
+                        <li data-lang="es">Saliva espumosa, sanguinolenta: sospecha de epilepsia.</li>
+                        <li data-lang="en" style="display:none;">Foamy, bloody saliva: suspected epilepsy.</li>
+                        <li data-lang="es">Respiración ruidosa: sospecha de asfixia obstructiva.</li>
+                        <li data-lang="en" style="display:none;">Noisy breathing: suspected obstructive asphyxia.</li>
+                    </ul>
+                </li>
+                <li data-lang="es"><strong>Mantener posición horizontal:</strong> Excepto en náuseas/vómitos (cabeza lateral) o congestión facial (cabeza levantada $45^{\circ}$).</li>
+                <li data-lang="en" style="display:none;"><strong>Maintain horizontal position:</strong> Except for nausea/vomiting (head turned sideways) or facial congestion (head raised $45^{\circ}$).</li>
+                <li data-lang="es"><strong>Mantener temperatura corporal:</strong> Aislar del suelo, abrigar si hace frío, desabrigar si hace calor.</li>
+                <li data-lang="en" style="display:none;"><strong>Maintain body temperature:</strong> Isolate from the ground, cover if cold, uncover if hot.</li>
+                <li data-lang="es"><strong>Guardar la calma:</strong> No actuar precipitadamente, no demostrar confusión.</li>
+                <li data-lang="en" style="display:none;"><strong>Stay calm:</strong> Do not act rashly, do not show confusion.</li>
+                <li data-lang="es"><strong>Delegar el llamado de ambulancia:</strong> NUNCA abandonar al accidentado.</li>
+                <li data-lang="en" style="display:none;"><strong>Delegate ambulance call:</strong> NEVER abandon the injured person.</li>
+                <li data-lang="es"><strong>No dar líquidos.</strong></li>
+                <li data-lang="en" style="display:none;"><strong>Do not give liquids.</strong></li>
+                <li data-lang="es"><strong>Alejar curiosos:</strong> Mantener al accidentado lejos de comentarios.</li>
+                <li data-lang="en" style="display:none;"><strong>Keep curious onlookers away:</strong> Keep the injured person away from comments.</li>
+                <li data-lang="es"><strong>Impedir que el accidentado observe sus lesiones:</strong> Agrava el estrés.</li>
+                <li data-lang="en" style="display:none;"><strong>Prevent the injured person from observing their injuries:</strong> Worsens stress.</li>
+                <li data-lang="es"><strong>Mantener confort físico y emocional.</strong></li>
+                <li data-lang="en" style="display:none;"><strong>Maintain physical and emotional comfort.</strong></li>
+            </ol>
+            <h4><span data-lang="es">Traslado de lesionados</span><span data-lang="en" style="display:none;">Transport of the Injured</span></h4>
+            <p data-lang="es">El traslado debe ser rápido, pero solo cuando la víctima esté estable. Debe ser al centro de salud más apropiado, no necesariamente el más cercano.</p>
+            <p data-lang="en" style="display:none;">Transport should be quick, but only when the victim is stable. It should be to the most appropriate health center, not necessarily the closest.</p>
+        </section>
+
+        <section id="lesiones-traumaticas">
+            <h2 data-lang="es">Capítulo II: Lesiones Traumáticas</h2>
+            <h2 data-lang="en" style="display:none;">Chapter II: Traumatic Injuries</h2>
+            <p data-lang="es">A diario, la violencia externa puede causar lesiones físicas. Se estudian separadamente: lesiones de partes blandas, lesiones de partes duras, politraumatismos.</p>
+            <p data-lang="en" style="display:none;">Daily, external violence can cause physical injuries. They are studied separately: soft tissue injuries, hard tissue injuries, polytrauma.</p>
+            
+            <h3><span data-lang="es">Definiciones</span><span data-lang="en" style="display:none;">Definitions</span></h3>
+            <ul>
+                <li data-lang="es"><strong>Traumatismo:</strong> Agresión por un agente en movimiento (golpes, caídas).</li>
+                <li data-lang="en" style="display:none;"><strong>Trauma:</strong> Aggression by a moving agent (blows, falls).</li>
+                <li data-lang="es"><strong>Lesión traumática:</strong> Pérdida de continuidad de tejidos por traumatismo.</li>
+                <li data-lang="en" style="display:none;"><strong>Traumatic Injury:</strong> Loss of tissue continuity due to trauma.</li>
+                <li data-lang="es"><strong>Contusión:</strong> Lesión sin ruptura de piel, con inflamación de tejidos.</li>
+                <li data-lang="en" style="display:none;"><strong>Contusion:</strong> Injury without skin rupture, with tissue inflammation.</li>
+                <li data-lang="es"><strong>Inflamación:</strong> Dolor, enrojecimiento, aumento de volumen, calor e impotencia funcional.</li>
+                <li data-lang="en" style="display:none;"><strong>Inflammation:</strong> Pain, redness, swelling, heat, and functional impotence.</li>
+                <li data-lang="es"><strong>Esguince:</strong> Lesiones en articulación por movimiento excesivo, desgarros parciales.</li>
+                <li data-lang="en" style="display:none;"><strong>Sprain:</strong> Joint injuries due to excessive movement, partial tears.</li>
+                <li data-lang="es"><strong>Luxación:</strong> Desplazamiento de superficies articulares.</li>
+                <li data-lang="en" style="display:none;"><strong>Dislocation:</strong> Displacement of joint surfaces.</li>
+                <li data-lang="es"><strong>Fracturas:</strong> Pérdida de continuidad ósea.</li>
+                <li data-lang="en" style="display:none;"><strong>Fractures:</strong> Loss of bone continuity.</li>
+                <li data-lang="es"><strong>Atrición:</strong> Lesión total de tejidos de un miembro por aplastamiento.</li>
+                <li data-lang="en" style="display:none;"><strong>Attrition:</strong> Total tissue injury of a limb due to crushing.</li>
+                <li data-lang="es"><strong>Hematomas:</strong> Acumulación de sangre con aumento de volumen.</li>
+                <li data-lang="en" style="display:none;"><strong>Hematomas:</strong> Accumulation of blood with increased volume.</li>
+                <li data-lang="es"><strong>Equimosis:</strong> Ruptura de capilares con salida de sangre al intersticio (moretón).</li>
+                <li data-lang="en" style="display:none;"><strong>Ecchymosis:</strong> Rupture of capillaries with blood leakage into the interstitium (bruise).</li>
+                <li data-lang="es"><strong>Hemostasia:</strong> Detención de una hemorragia.</li>
+                <li data-lang="en" style="display:none;"><strong>Hemostasis:</strong> Cessation of bleeding.</li>
+            </ul>
+
+            <h3><span data-lang="es">Contusión</span><span data-lang="en" style="display:none;">Contusion</span></h3>
+            <p data-lang="es">Lesiones por impacto con objetos romos. La piel intacta, pero hay hemorragias internas (equimosis, hematomas).</p>
+            <p data-lang="en" style="display:none;">Injuries from impact with blunt objects. Skin intact, but internal bleeding (ecchymosis, hematomas).</p>
+            <h4><span data-lang="es">Primeros Auxilios:</span><span data-lang="en" style="display:none;">First Aid:</span></h4>
+            <ul>
+                <li data-lang="es">Aplicar frío local (seco o compresas húmedas).</li>
+                <li data-lang="en" style="display:none;">Apply local cold (dry or wet compresses).</li>
+                <li data-lang="es">Colocar vendaje inmovilizador sin comprimir.</li>
+                <li data-lang="en" style="display:none;">Apply immobilizing bandage without compressing.</li>
+                <li data-lang="es">Reposo con la zona en alto por 48 horas.</li>
+                <li data-lang="en" style="display:none;">Rest with the area elevated for 48 hours.</li>
+                <li data-lang="es">Después de 48 horas, aplicar calor para desinflamar.</li>
+                <li data-lang="en" style="display:none;">After 48 hours, apply heat to reduce inflammation.</li>
+            </ul>
+
+            <h3><span data-lang="es">Heridas</span><span data-lang="en" style="display:none;">Wounds</span></h3>
+            <p data-lang="es">Pérdida de continuidad de piel y/o partes blandas. Causas múltiples.</p>
+            <p data-lang="en" style="display:none;">Loss of continuity of skin and/or soft tissues. Multiple causes.</p>
+            <h4><span data-lang="es">Clasificación:</span><span data-lang="en" style="display:none;">Classification:</span></h4>
+            <ul>
+                <li data-lang="es">Contusas, Cortantes, Punzantes, Atriciones, Mixtas, Quemaduras, A bala o arma de fuego, Erosivas o abrasivas.</li>
+                <lang data-en style="display:none;">Contusions, Cutting, Punctures, Attritions, Mixed, Burns, Gunshot or firearm, Erosive or abrasive.</li>
+                <li data-lang="es">Pueden ser superficiales, profundas, simples o complicadas.</li>
+                <li data-lang="en" style="display:none;">Can be superficial, deep, simple or complicated.</li>
+            </ul>
+            <h4><span data-lang="es">Primeros Auxilios:</span><span data-lang="en" style="display:none;">First Aid:</span></h4>
+            <p data-lang="es"><strong>Objetivos:</strong> Prevenir shock e infección, favorecer curación.</p>
+            <p data-lang="en" style="display:none;"><strong>Objectives:</strong> Prevent shock and infection, promote healing.</p>
+            <p data-lang="es"><strong>Medidas generales:</strong> Hacer hemostasia, limpiar con antiséptico, cubrir, inmovilizar y elevar el miembro afectado, enviar a centro asistencial.</p>
+            <p data-lang="en" style="display:none;"><strong>General measures:</strong> Perform hemostasis, clean with antiseptic, cover, immobilize and elevate the affected limb, send to a healthcare facility.</p>
+            
+            <h4><span data-lang="es">Técnicas de Hemostasia:</span><span data-lang="en" style="display:none;">Hemostasis Techniques:</span></h4>
+            <ul>
+                <li data-lang="es"><strong>Compresiva:</strong> Cubrir y comprimir con apósito estéril.</li>
+                <li data-lang="en" style="display:none;"><strong>Compressive:</strong> Cover and compress with sterile dressing.</li>
+                <li data-lang="es"><strong>Oclusiva:</strong> Comprimir pulso proximal (arteria) o distal (vena).</li>
+                <li data-lang="en" style="display:none;"><strong>Occlusive:</strong> Compress proximal (artery) or distal (vein) pulse.</li>
+                <li data-lang="es"><strong>Torniquete:</strong> Solo en sangramientos arteriales masivos, intermitente (15 min puesto, 3-5 min suelto).</li>
+                <li data-lang="en" style="display:none;"><strong>Tourniquet:</strong> Only for massive arterial bleeding, intermittent (15 min on, 3-5 min off).</li>
+            </ul>
+            <h4><span data-lang="es">Atención de heridas específicas:</span><span data-lang="en" style="display:none;">Specific wound care:</span></h4>
+            <ul>
+                <li data-lang="es"><strong>Atriciones/fracturas complicadas:</strong> Hemostasia suave, inmovilizar, cubrir, trasladar.</li>
+                <lang data-en style="display:none;">Avulsions/complicated fractures: Gentle hemostasis, immobilize, cover, transport.</li>
+                <li data-lang="es"><strong>Punzantes torácicas:</strong> Cubrir y sellar, hospital.</li>
+                <lang data-en style="display:none;">Thoracic punctures: Cover and seal, hospital.</li>
+                <li data-lang="es"><strong>Craneo:</strong> Inmóvil, horizontal, cubrir, hospital.</li>
+                <lang data-en style="display:none;">Head: Immobilize, horizontal, cover, hospital.</li>
+                <li data-lang="es"><strong>Craneo con pérdida de conciencia:</strong> SOLO cubrir, llamar ambulancia.</li>
+                <lang data-en style="display:none;">Head with loss of consciousness: ONLY cover, call ambulance.</li>
+                <li data-lang="es"><strong>Bala:</strong> SOLO cubrir, traslado urgente.</li>
+                <lang data-en style="display:none;">Gunshot: ONLY cover, urgent transport.</li>
+            </ul>
+
+            <h3><span data-lang="es">Técnica de curación en Primeros Auxilios</span><span data-lang="en" style="display:none;">First Aid Wound Dressing Technique</span></h3>
+            <p data-lang="es"><strong>Objetivos:</strong> Prevenir infecciones, controlar hemorragias, evitar agravamiento.</p>
+            <p data-lang="en" style="display:none;"><strong>Objectives:</strong> Prevent infections, control bleeding, avoid worsening.</p>
+            <ol>
+                <li data-lang="es">Lavado de manos prolijo.</li>
+                <li data-lang="en" style="display:none;">Thorough hand washing.</li>
+                <li data-lang="es">Aseo cuidadoso de piel alrededor de herida con agua y jabón/alcohol.</li>
+                <li data-lang="en" style="display:none;">Careful cleaning of skin around wound with soap and water/alcohol.</li>
+                <li data-lang="es">Dejar escurrir suero fisiológico o agua hervida sobre la herida.</li>
+                <li data-lang="en" style="display:none;">Let physiological saline or boiled water flow over the wound.</li>
+                <li data-lang="es">Si la herida está muy contaminada (abrasivas, mordeduras), lavar con agua y jabón, incluso cepillar. Usar agua oxigenada diluida.</li>
+                <li data-lang="en" style="display:none;">If the wound is heavily contaminated (abrasions, bites), wash with soap and water, even brush. Use diluted hydrogen peroxide.</li>
+                <li data-lang="es">Pincelar antisépticos en piel sana.</li>
+                <li data-lang="en" style="display:none;">Brush antiseptics on healthy skin.</li>
+                <li data-lang="es">Cubrir con apósito estéril, vendar y proteger.</li>
+                <li data-lang="en" style="display:none;">Cover with sterile dressing, bandage, and protect.</li>
+            </ol>
+            <p class="info-box" data-lang="es"><strong>Nota:</strong> Personas >15 años con heridas contaminadas con tétanos, enviar a urgencia para vacuna/antitoxina.</p>
+            <p class="info-box" data-lang="en" style="display:none;"><strong>Note:</strong> People >15 years with tetanus-contaminated wounds, send to emergency for vaccine/antitoxin.</p>
+            
+            <h3><span data-lang="es">Traumatismos de Cabeza</span><span data-lang="en" style="display:none;">Head Trauma</span></h3>
+            <p data-lang="es">Pueden ser por aceleración o desaceleración.</p>
+            <p data-lang="en" style="display:none;">Can be due to acceleration or deceleration.</p>
+            <p data-lang="es">Los traumatismos de cráneo habitualmente implican traumatismo de encéfalo (TEC).</p>
+            <p data-lang="en" style="display:none;">Head injuries usually involve brain trauma (TBI).</p>
+            <h4><span data-lang="es">Evaluación del daño cerebral:</span><span data-lang="en" style="display:none;">Brain Damage Evaluation:</span></h4>
+            <ul>
+                <li data-lang="es">Cualquier alteración de conciencia.</li>
+                <li data-lang="en" style="display:none;">Any alteration of consciousness.</li>
+                <li data-lang="es">Pérdida de sensibilidad o movilidad de extremidades.</li>
+                <li data-lang="en" style="display:none;">Loss of sensation or mobility in extremities.</li>
+                <li data-lang="es">Fractura de cráneo con hundimiento.</li>
+                <li data-lang="en" style="display:none;">Depressed skull fracture.</li>
+                <li data-lang="es">Equimosis perioculares.</li>
+                <li data-lang="en" style="display:none;">Periorbital ecchymosis.</li>
+                <li data-lang="es">Pulso lento (< 50 por minuto).</li>
+                <li data-lang="en" style="display:none;">Slow pulse (< 50 per minute).</li>
+            </ul>
+            <h5><span data-lang="es">Primeros auxilios (general):</span><span data-lang="en" style="display:none;">First aid (general):</span></h5>
+            <ul>
+                <li data-lang="es">Cuidados generales, soporte vital básico (RCP si es necesario), traslado urgente.</li>
+                <li data-lang="en" style="display:none;">General care, basic life support (CPR if necessary), urgent transfer.</li>
+            </ul>
+            <h4><span data-lang="es">Signos de fractura de base de cráneo:</span><span data-lang="en" style="display:none;">Signs of skull base fracture:</span></h4>
+            <ul>
+                <li data-lang="es">Hemorragia de oídos/nariz, salida de líquido cefalorraquídeo, equimosis periocular/retro articular.</li>
+                <li data-lang="en" style="display:none;">Bleeding from ears/nose, cerebrospinal fluid leakage, periorbital/retroarticular ecchymosis.</li>
+            </ul>
+            <h5><span data-lang="es">Primeros auxilios:</span><span data-lang="en" style="display:none;">First aid:</span></h5>
+            <ul>
+                <li data-lang="es">Buscar signos de daño cerebral.</li>
+                <li data-lang="en" style="display:none;">Look for signs of brain damage.</li>
+                <li data-lang="es">Permeabilizar vía respiratoria (retirar cuerpos extraños, extender cuello, cabeza lateral).</li>
+                <li data-lang="en" style="display:none;">Permeabilize airway (remove foreign bodies, extend neck, head sideways).</li>
+                <li data-lang="es">Mantener horizontal con oído que sangre hacia abajo.</li>
+                <li data-lang="en" style="display:none;">Keep horizontal with bleeding ear facing down.</li>
+                <li data-lang="es">Cubrir heridas superficiales.</li>
+                <li data-lang="en" style="display:none;">Cover superficial wounds.</li>
+                <li data-lang="es">Colocar bolsa de hielo en cráneo.</li>
+                <li data-lang="en" style="display:none;">Place ice pack on skull.</li>
+                <li data-lang="es">Trasladar a centro asistencial.</li>
+                <li data-lang="en" style="display:none;">Transfer to medical center.</li>
+            </ul>
+            <p class="warning" data-lang="es">Lo que NO se debe hacer: NO aplicar calor, NO administrar drogas, NO dar de comer o beber, NO abandonar a la víctima, NO dejar de buscar otras lesiones, NO demorar traslado.</p>
+            <p class="warning" data-lang="en" style="display:none;">What NOT to do: DO NOT apply heat, DO NOT administer drugs, DO NOT give food or drink, DO NOT abandon the victim, DO NOT stop looking for other injuries, DO NOT delay transport.</p>
+            
+            <h4><span data-lang="es">Hemorragia Nasal (epistaxis):</span><span data-lang="en" style="display:none;">Nosebleed (epistaxis):</span></h4>
+            <ul>
+                <li data-lang="es">Mantener sentado con cabeza ligeramente hacia adelante.</li>
+                <li data-lang="en" style="display:none;">Keep seated with head slightly forward.</li>
+                <li data-lang="es">Comprimir lado afectado.</li>
+                <li data-lang="en" style="display:none;">Compress affected side.</li>
+                <li data-lang="es">Respiración bucal.</li>
+                <li data-lang="en" style="display:none;">Mouth breathing.</li>
+                <li data-lang="es">No sonarse.</li>
+                <li data-lang="en" style="display:none;">Do not blow your nose.</li>
+                <li data-lang="es">Trasladar a centro asistencial para taponamiento.</li>
+                <li data-lang="en" style="display:none;">Transfer to medical center for packing.</li>
+            </ul>
+            <h4><span data-lang="es">Hemorragia bucal:</span><span data-lang="en" style="display:none;">Oral bleeding:</span></h4>
+            <ul>
+                <li data-lang="es">Hemostasia compresiva (dedos, gasa), agua oxigenada.</li>
+                <li data-lang="en" style="display:none;">Compressive hemostasis (fingers, gauze), hydrogen peroxide.</li>
+                <li data-lang="es">A centro asistencial.</li>
+                <li data-lang="en" style="display:none;">To medical center.</li>
+            </ul>
+
+            <h3><span data-lang="es">Traumatismos del aparato locomotor</span><span data-lang="en" style="display:none;">Musculoskeletal Trauma</span></h3>
+            <p data-lang="es">Desgarros de ligamentos, fracturas, luxaciones, contusiones. Actuar como si las lesiones fueran las más graves: inmovilizar, reposar, trasladar.</p>
+            <p data-lang="en" style="display:none;">Ligament tears, fractures, dislocations, contusions. Act as if the injuries are the most severe: immobilize, rest, transport.</p>
+            <p data-lang="es">Férula: Objeto rígido o semirrígido para impedir movimiento (madera, cartón, metal, yeso).</p>
+            <p data-lang="en" style="display:none;">Splint: Rigid or semi-rigid object to prevent movement (wood, cardboard, metal, plaster).</p>
+
+            <h4><span data-lang="es">Esguince:</span><span data-lang="en" style="display:none;">Sprain:</span></h4>
+            <p data-lang="es">Lesión de ligamentos por flexión/extensión exagerada. Puede haber ruptura de cápsula articular, ligamentos, hemorragia.</p>
+            <p data-lang="en" style="display:none;">Ligament injury due to exaggerated flexion/extension. May involve rupture of the joint capsule, ligaments, hemorrhage.</p>
+            <h5><span data-lang="es">Atención de Primeros Auxilios:</span><span data-lang="en" style="display:none;">First Aid Care:</span></h5>
+            <ul>
+                <li data-lang="es">Inmovilizar con vendas/férulas.</li>
+                <li data-lang="en" style="display:none;">Immobilize with bandages/splints.</li>
+                <li data-lang="es">Mantener extremidad en alto y reposo absoluto.</li>
+                <li data-lang="en" style="display:none;">Keep limb elevated and in absolute rest.</li>
+                <li data-lang="es">Traslado a urgencia.</li>
+                <li data-lang="en" style="display:none;">Transfer to emergency.</li>
+            </ul>
+
+            <h4><span data-lang="es">Luxación:</span><span data-lang="en" style="display:none;">Dislocation:</span></h4>
+            <p data-lang="es">Pérdida de contacto entre huesos articulares. Imposibilidad de movimiento, gran dolor y deformidad. Siempre produce daño de cápsula articular y ligamentos. Puede haber atrapamiento de vasos/nervios.</p>
+            <p data-lang="en" style="display:none;">Loss of contact between articulating bones. Inability to move, severe pain, and deformity. Always results in damage to the joint capsule and ligaments. There may be entrapment of vessels/nerves.</p>
+            <h5><span data-lang="es">Atención de Primeros Auxilios:</span><span data-lang="en" style="display:none;">First Aid Care:</span></h5>
+            <ul>
+                <li data-lang="es">Inmovilizar sin forzar alineamiento.</li>
+                <li data-lang="en" style="display:none;">Immobilize without forcing alignment.</li>
+                <li data-lang="es">Mantener extremidad en alto y reposo absoluto.</li>
+                <li data-lang="en" style="display:none;">Keep limb elevated and in absolute rest.</li>
+                <li data-lang="es">Traslado urgente por dolor intenso.</li>
+                <li data-lang="en" style="display:none;">Urgent transfer due to severe pain.</li>
+                <li class="warning" data-lang="es">NUNCA intentar reducir la luxación.</li>
+                <li class="warning" data-lang="en" style="display:none;">NEVER attempt to reduce the dislocation.</li>
+            </ul>
+            
+            <h4><span data-lang="es">Fracturas:</span><span data-lang="en" style="display:none;">Fractures:</span></h4>
+            <p data-lang="es">Pérdida de continuidad ósea por golpe/caída. Dolor, deformidad, aumento de volumen, pérdida de movimiento.</p>
+            <p data-lang="en" style="display:none;">Loss of bone continuity due to impact/fall. Pain, deformity, swelling, loss of movement.</p>
+            <p data-lang="es">Clasificación: Simples (solo hueso), Complicadas (daño a otras estructuras), Cerradas o Abiertas (comunicación con ambiente, fragmentos óseos expuestos).</p>
+            <p data-lang="en" style="display:none;">Classification: Simple (bone only), Complicated (damage to other structures), Closed or Open (communication with environment, exposed bone fragments).</p>
+            
+            <h3><span data-lang="es">Manejo de paciente politraumatizado</span><span data-lang="en" style="display:none;">Management of Polytraumatized Patient</span></h3>
+            <p data-lang="es">Paciente con más de una lesión de diverso tipo.</p>
+            <p data-lang="en" style="display:none;">Patient with more than one type of injury.</p>
+            <h4><span data-lang="es">Primeros auxilios:</span><span data-lang="en" style="display:none;">First aid:</span></h4>
+            <ul>
+                <li data-lang="es">Atender en el sitio del accidente.</li>
+                <li data-lang="en" style="display:none;">Attend to at the accident site.</li>
+                <li data-lang="es">Movilizar lo menos posible, con suavidad, sin preocuparse del tipo exacto de lesión.</li>
+                <li data-lang="en" style="display:none;">Move as little as possible, gently, without worrying about the exact type of injury.</li>
+                <li data-lang="es">Inmovilizar sobre la ropa.</li>
+                <li data-lang="en" style="display:none;">Immobilize over clothing.</li>
+                <li class="warning" data-lang="es">Nunca tratar de hacer crepitar o movilizar el miembro afectado.</li>
+                <li class="warning" data-lang="en" style="display:none;">Never try to crepitate or move the affected limb.</li>
+                <li data-lang="es">Al movilizar, levantar con palmas y traccionar suavemente a distal.</li>
+                <li data-lang="en" style="display:none;">When mobilizing, lift with palms and gently pull distally.</li>
+                <li data-lang="es">Atender otras lesiones graves simultáneamente.</li>
+                <li data-lang="en" style="display:none;">Attend to other serious injuries simultaneously.</li>
+                <li data-lang="es">Enviar con suma urgencia al hospital.</li>
+                <li data-lang="en" style="display:none;">Send to the hospital with utmost urgency.</li>
+                <li data-lang="es">Cubrir fracturas expuestas con material estéril.</li>
+                <li data-lang="en" style="display:none;">Cover open fractures with sterile material.</li>
+                <li data-lang="es">Dejar miembro sobre nivel del corazón para evitar edemas.</li>
+                <lang data-en style="display:none;">Keep limb above heart level to prevent edema.</li>
+                <li data-lang="es">Inmovilizar una articulación proximal y una distal.</li>
+                <li data-lang="en" style="display:none;">Immobilize one proximal and one distal joint.</li>
+                <li data-lang="es">Almohadillar prominencias óseas.</li>
+                <li data-lang="en" style="display:none;">Pad bony prominences.</li>
+            </ul>
+        </section>
+
+        <section id="quemaduras">
+            <h2 data-lang="es">Capítulo III: Quemaduras</h2>
+            <h2 data-lang="en" style="display:none;">Chapter III: Burns</h2>
+            <p data-lang="es">Pérdida de continuidad de tejidos por agentes físicos, químicos, electromagnéticos, eléctricos, radiactivos.</p>
+            <p data-lang="en" style="display:none;">Loss of tissue continuity caused by physical, chemical, electromagnetic, electrical, radioactive agents.</p>
+            <p data-lang="es"><strong>Agentes etiológicos:</strong> Fuego, líquidos calientes, ácidos, álcalis, frío, electricidad, radiaciones, sol.</p>
+            <p data-lang="en" style="display:none;"><strong>Etiological agents:</strong> Fire, hot liquids, acids, alkalis, cold, electricity, radiation, sun.</p>
+
+            <h3><span data-lang="es">Clasificación:</span><span data-lang="en" style="display:none;">Classification:</span></h3>
+            <h4><span data-lang="es">a) Por profundidad:</span><span data-lang="en" style="display:none;">a) By depth:</span></h4>
+            <ul>
+                <li data-lang="es"><strong>Tipo A (1º grado):</strong> Enrojecimiento, dolor intenso, sin ruptura de piel.</li>
+                <li data-lang="en" style="display:none;"><strong>Type A (1st degree):</strong> Redness, intense pain, no skin rupture.</li>
+                <li data-lang="es"><strong>Tipo A (2º grado):</strong> Eritema, dolor, ampollas, compromete dermis y epidermis.</li>
+                <li data-lang="en" style="display:none;"><strong>Type A (2nd degree):</strong> Erythema, pain, blisters, involves dermis and epidermis.</li>
+                <li data-lang="es"><strong>Tipo B (3º grado):</strong> Zonas sangrantes, piel acartonada/blanquecina/carbonizada, indolora por destrucción nerviosa.</li>
+                <li data-lang="en" style="display:none;"><strong>Type B (3rd degree):</strong> Bleeding areas, leathery/whitish/carbonized skin, painless due to nerve destruction.</li>
+                <li data-lang="es"><strong>Tipo A-B (mixta):</strong> Zonas tipo A y B, profundidad variable.</li>
+                <li data-lang="en" style="display:none;"><strong>Type A-B (mixed):</strong> Areas of type A and B, variable depth.</li>
+            </ul>
+            <h4><span data-lang="es">b) Por extensión (Regla de los "9" o escala de Berkow):</span><span data-lang="en" style="display:none;">b) By extent (Rule of "9s" or Berkow scale):</span></h4>
+            <p data-lang="es">12% de superficie corporal comprometida es grave, 50% pocas posibilidades de sobrevida.</p>
+            <p data-lang="en" style="display:none;">12% of body surface area involved is serious, 50% has low survival chances.</p>
+            <ul>
+                <li data-lang="es">Cabeza y cuello: 9%</li>
+                <li data-lang="en" style="display:none;">Head and neck: 9%</li>
+                <li data-lang="es">Brazos: 9% c/u (18% total)</li>
+                <li data-lang="en" style="display:none;">Arms: 9% each (18% total)</li>
+                <li data-lang="es">Piernas: 18% c/u (36% total)</li>
+                <li data-lang="en" style="display:none;">Legs: 18% each (36% total)</li>
+                <li data-lang="es">Cara posterior del tronco: 18%</li>
+                <li data-lang="en" style="display:none;">Posterior trunk: 18%</li>
+                <li data-lang="es">Cara anterior del tronco: 18%</li>
+                <li data-lang="en" style="display:none;">Anterior trunk: 18%</li>
+                <li data-lang="es">Genitales: 1%</li>
+                <li data-lang="en" style="display:none;">Genitals: 1%</li>
+            </ul>
+            <div class="image-container">
+                <img src="https://example.com/rule_of_nines_adult.png" alt="Rule of Nines for Adults">
+                <p data-lang="es">Regla de los 9 en adultos.</p>
+                <p data-lang="en" style="display:none;">Rule of 9s in adults.</p>
+                <img src="https://example.com/rule_of_nines_child.png" alt="Rule of Nines for Children">
+                <p data-lang="es">Regla de los 9 en niños.</p>
+                <p data-lang="en" style="display:none;">Rule of 9s in children.</p>
+            </div>
+            <h4><span data-lang="es">c) Por localización:</span><span data-lang="en" style="display:none;">c) By location:</span></h4>
+            <p data-lang="es">Cara, cabeza, cuello, manos, pies, genitales y pliegues de grandes articulaciones (rodillas, codos, axilas) comprometen funcionalidad.</p>
+            <p data-lang="en" style="display:none;">Face, head, neck, hands, feet, genitals, and folds of large joints (knees, elbows, armpits) compromise functionality.</p>
+            
+            <h3><span data-lang="es">Primeros Auxilios (general):</span><span data-lang="en" style="display:none;">First Aid (general):</span></h3>
+            <ol>
+                <li data-lang="es">Eliminar agente causal lavando con abundante agua.</li>
+                <li data-lang="en" style="display:none;">Remove causative agent by washing thoroughly with water.</li>
+                <li data-lang="es">Calmar dolor con frío local.</li>
+                <li data-lang="en" style="display:none;">Soothe pain with local cold.</li>
+                <li data-lang="es">Prevenir infección cubriendo con gasas estériles.</li>
+                <li data-lang="en" style="display:none;">Prevent infection by covering with sterile gauze.</li>
+            </ol>
+            
+            <h4><span data-lang="es">Quemadura tipo A (1º o 2º grado):</span><span data-lang="en" style="display:none;">Type A Burn (1st or 2nd degree):</span></h4>
+            <ul>
+                <li data-lang="es">Dar líquidos enriquecidos con minerales (Coca-Cola, agua mineral, agua con azúcar o sal).</li>
+                <li data-lang="en" style="display:none;">Give liquids enriched with minerals (Coca-Cola, mineral water, sugar or salt water).</li>
+                <li data-lang="es">Cubrir herida.</li>
+                <li data-lang="en" style="display:none;">Cover wound.</li>
+                <li data-lang="es">Colocar agua fría, lavar si las ampollas están intactas.</li>
+                <li data-lang="en" style="display:none;">Apply cold water, wash if blisters are intact.</li>
+                <li data-lang="es">Llevar a centro asistencial.</li>
+                <li data-lang="en" style="display:none;">Take to medical center.</li>
+            </ul>
+            <h4><span data-lang="es">Quemadura tipo A-B y B (o 2º grado profundo):</span><span data-lang="en" style="display:none;">Type A-B and B Burn (or deep 2nd degree):</span></h4>
+            <ul>
+                <li data-lang="es">Aseo con abundante suero fisiológico estéril.</li>
+                <li data-lang="en" style="display:none;">Clean with abundant sterile physiological saline.</li>
+                <li data-lang="es">Cubrir con material estéril.</li>
+                <li data-lang="en" style="display:none;">Cover with sterile material.</li>
+                <li data-lang="es">Enviar a centro asistencial.</li>
+                <li data-lang="en" style="display:none;">Send to medical center.</li>
+            </ul>
+            <h4><span data-lang="es">Recomendaciones:</span><span data-lang="en" style="display:none;">Recommendations:</span></h4>
+            <ul>
+                <li data-lang="es">Hidratar con líquido enriquecido si la quemadura es extensa y el hospital está lejos.</li>
+                <li data-lang="en" style="display:none;">Hydrate with enriched liquid if the burn is extensive and the hospital is far away.</li>
+                <li class="warning" data-lang="es">No colocar ningún antiséptico (quemaduras son estériles al principio).</li>
+                <li class="warning" data-lang="en" style="display:none;">Do not apply any antiseptic (burns are initially sterile).</li>
+                <li data-lang="es">Para esterilizar material, usar planchado de un paño limpio.</li>
+                <li data-lang="en" style="display:none;">To sterilize material, iron a clean cloth.</li>
+            </ul>
+            <h4><span data-lang="es">Cuidados con el paciente ardiendo:</span><span data-lang="en" style="display:none;">Care for the burning patient:</span></h4>
+            <ul>
+                <li data-lang="es">Botar al suelo y envolver en frazadas de lana (no sintéticas), hacerlo rodar para apagar llamas.</li>
+                <li data-lang="en" style="display:none;">Drop to the ground and wrap in wool blankets (not synthetic), roll to extinguish flames.</li>
+                <li class="warning" data-lang="es">Nunca tirar tierra.</li>
+                <li class="warning" data-lang="en" style="display:none;">Never throw dirt.</li>
+            </ul>
+            <h4><span data-lang="es">Quemaduras de sol (I o II grado):</span><span data-lang="en" style="display:none;">Sunburn (1st or 2nd degree):</span></h4>
+            <ul>
+                <li data-lang="es">Trasladar a sitio fresco.</li>
+                <li data-lang="en" style="display:none;">Move to a cool place.</li>
+                <li data-lang="es">Cabeza levantada, compresas frías en cabeza, cuello y extremidades.</li>
+                <li data-lang="en" style="display:none;">Head elevated, cold compresses on head, neck, and extremities.</li>
+            </ul>
+            <h4><span data-lang="es">Quemaduras de gran extensión:</span><span data-lang="en" style="display:none;">Large area burns:</span></h4>
+            <ul>
+                <li data-lang="es">Envolver en sábana húmeda fría, trasladar a centro asistencial.</li>
+                <li data-lang="en" style="display:none;">Wrap in a cold, damp sheet, transfer to a healthcare facility.</li>
+            </ul>
+            <h4><span data-lang="es">Quemaduras por ácidos:</span><span data-lang="en" style="display:none;">Acid burns:</span></h4>
+            <ul>
+                <li data-lang="es">Retirar ropa impregnada, sacar ácido con toalla seca.</li>
+                <li data-lang="en" style="display:none;">Remove impregnated clothing, wipe acid with dry towel.</li>
+                <li data-lang="es">Aplicar compresas con solución de bicarbonato de sodio (3 cucharadas/litro agua).</li>
+                <li data-lang="en" style="display:none;">Apply compresses with baking soda solution (3 tablespoons/liter water).</li>
+                <li data-lang="es">Lavar con abundante agua.</li>
+                <li data-lang="en" style="display:none;">Wash with abundant water.</li>
+                <li data-lang="es">Trasladar a centro asistencial.</li>
+                <li data-lang="en" style="display:none;">Transfer to healthcare facility.</li>
+            </ul>
+            <h4><span data-lang="es">Quemaduras por álcalis:</span><span data-lang="en" style="display:none;">Alkali burns:</span></h4>
+            <ul>
+                <li data-lang="es">Desnudar, secar el cuerpo con toalla.</li>
+                <li data-lang="en" style="display:none;">Undress, dry body with towel.</li>
+                <li data-lang="es">Aplicar solución ácida (2 cucharadas limón/vinagre por litro agua).</li>
+                <li data-lang="en" style="display:none;">Apply acidic solution (2 tablespoons lemon/vinegar per liter water).</li>
+                <li data-lang="es">Lavar con abundante agua.</li>
+                <li data-lang="en" style="display:none;">Wash with abundant water.</li>
+                <li data-lang="es">Trasladar a centro asistencial.</li>
+                <li data-lang="en" style="display:none;">Transfer to healthcare facility.</li>
+            </ul>
+            
+            <h3><span data-lang="es">Prevención de las Quemaduras:</span><span data-lang="en" style="display:none;">Burn Prevention:</span></h3>
+            <p data-lang="es">Fundamental por el pronóstico imprevisible. Accidentes más frecuentes en el hogar (ancianos y niños 1-14 años).</p>
+            <p data-lang="en" style="display:none;">Fundamental due to unpredictable prognosis. Most frequent accidents at home (elderly and children 1-14 years).</p>
+            <p data-lang="es"><strong>Medidas Preventivas:</strong> No fumar en lugares con gases inflamables, no dejar artefactos eléctricos enchufados cerca de inflamables, proteger ojos/cara/manos con sopletes, apagar fuegos desocupados, evitar ropas inflamables cerca de calor, manejo cuidadoso de artefactos a parafina/gas, no dejar teteras/cacerolas hirviendo con mangos hacia afuera, no dejar fósforos al alcance de niños, proteger braseros, no permitir niños en la cocina/cerca de chimeneas, no usar líquidos inflamables cerca de llamas, no buscar escape de gas con fósforo, no permitir niños con fuegos artificiales, no permitir niños trasladar platos calientes, mantener químicos bajo llave, ceñirse a normas de químicos en trabajo, no apagar llamas de líquidos combustibles con agua, conocer uso de extintores y vías de escape.</p>
+            <p data-lang="en" style="display:none;"><strong>Preventive Measures:</strong> Do not smoke in places with flammable gases, do not leave electrical appliances plugged in near flammables, protect eyes/face/hands with blowtorches, extinguish unoccupied fires, avoid flammable clothing near heat, careful handling of paraffin/gas appliances, do not leave boiling kettles/pots with handles sticking out, do not leave matches within reach of children, protect braziers, do not allow children in the kitchen/near fireplaces, do not use flammable liquids near flames, do not check for gas leaks with a match, do not allow children with fireworks, do not allow children to carry hot plates, keep chemicals locked up, adhere to chemical regulations at work, do not extinguish flammable liquid flames with water, know how to use fire extinguishers and escape routes.</p>
+        </section>
+
+        <section id="hemorragias">
+            <h2 data-lang="es">Capítulo IV: Hemorragias</h2>
+            <h2 data-lang="en" style="display:none;">Chapter IV: Hemorrhages</h2>
+            <p data-lang="es"><strong>Definición:</strong> Salida de sangre de los vasos sanguíneos, extravasación sanguínea, pérdida anormal de sangre.</p>
+            <p data-lang="en" style="display:none;"><strong>Definition:</strong> Blood leaking from blood vessels, blood extravasation, abnormal blood loss.</p>
+            <h3><span data-lang="es">Clasificación:</span><span data-lang="en" style="display:none;">Classification:</span></h3>
+            <ul>
+                <li data-lang="es"><strong>Tipo:</strong> Arterial, Venosa.</li>
+                <li data-lang="en" style="display:none;"><strong>Type:</strong> Arterial, Venous.</li>
+                <li data-lang="es"><strong>Sitio:</strong> Interna (digestivas), Externa (heridas).</li>
+                <li data-lang="en" style="display:none;"><strong>Site:</strong> Internal (digestive), External (wounds).</li>
+                <li data-lang="es"><strong>Etiología:</strong> Espontánea (deficiencias de coagulación, medicamentos, envenenamiento), Traumáticas (más frecuentes), Ulcerosas.</li>
+                <li data-lang="en" style="display:none;"><strong>Etiology:</strong> Spontaneous (coagulation deficiencies, medications, poisoning), Traumatic (most common), Ulcerative.</li>
+            </ul>
+            <p data-lang="es"><strong>Coagulación sanguínea:</strong> Procesos para detener hemorragia. Normalmente espontánea. Grandes vasos necesitan intervención externa.</p>
+            <p data-lang="en" style="display:none;"><strong>Blood Coagulation:</strong> Processes to stop bleeding. Normally spontaneous. Large vessels require external intervention.</p>
+            
+            <h3><span data-lang="es">Primeros Auxilios:</span><span data-lang="en" style="display:none;">First Aid:</span></h3>
+            <p data-lang="es">Detención de hemorragia por métodos mecánicos o físicos.</p>
+            <p data-lang="en" style="display:none;">Stopping hemorrhage by mechanical or physical methods.</p>
+            <ul>
+                <li data-lang="es"><strong>Compresión digital directa:</strong> Presionar sobre la herida hasta que cese el sangramiento. Si el apósito se empapa, colocar otro encima sin retirar el anterior para no remover coágulos.</li>
+                <li data-lang="en" style="display:none;"><strong>Direct digital compression:</strong> Press on the wound until bleeding stops. If the dressing becomes saturated, place another on top without removing the previous one to avoid dislodging clots.</li>
+                <li data-lang="es"><strong>Elevación del miembro:</strong> Si la lesión es distal en una extremidad, eleve el miembro para reducir el sangramiento.</li>
+                <li data-lang="en" style="display:none;"><strong>Limb elevation:</strong> If the injury is distal on a limb, elevate the limb to reduce bleeding.</li>
+                <li data-lang="es"><strong>Torniquete:</strong> Solo en hemorragia masiva de gran arteria en extremidad inferior. Ocluir a proximal, soltar cada 10-15 minutos por 5 minutos, hasta atención de urgencia.</li>
+                <li data-lang="en" style="display:none;"><strong>Tourniquet:</strong> Only for massive arterial hemorrhage in a lower extremity. Occlude proximally, release every 10-15 minutes for 5 minutes, until emergency care.</li>
+            </ul>
+        </section>
+
+        <section id="shock">
+            <h2 data-lang="es">Capítulo V: Shock: Trastornos Hemodinámicos</h2>
+            <h2 data-lang="en" style="display:none;">Chapter V: Shock: Hemodynamic Disorders</h2>
+            <p data-lang="es"><strong>Definición:</strong> Colapso de la circulación sanguínea con depresión de funciones vitales por descenso de presión arterial. Pérdida de relación continente-contenido.</p>
+            <p data-lang="en" style="display:none;"><strong>Definition:</strong> Collapse of blood circulation with depression of vital functions due to decreased blood pressure. Loss of container-content relationship.</p>
+            <h3><span data-lang="es">Clasificación:</span><span data-lang="en" style="display:none;">Classification:</span></h3>
+            <ul>
+                <li data-lang="es"><strong>1. Central o cardiogénico:</strong> Corazón se detiene, paralizando circulación.</li>
+                <li data-lang="en" style="display:none;"><strong>1. Central or cardiogenic:</strong> Heart stops, paralyzing circulation.</li>
+                <li data-lang="es"><strong>2. Pérdida de volemia:</strong> Volumen total de sangre disminuye (anemia aguda por traumatismos, deshidratación por sudoración, insolación, quemaduras extensas).</li>
+                <li data-lang="en" style="display:none;"><strong>2. Hypovolemia:</strong> Total blood volume decreases (acute anemia due to trauma, dehydration from sweating, sunstroke, extensive burns).</li>
+                <li data-lang="es"><strong>3. Dilatación del lecho vascular:</strong> Vasos sanguíneos se dilatan (golpe de calor, metabólico, impactos emocionales: temor, dolor intenso).</li>
+                <li data-lang="en" style="display:none;"><strong>3. Vasodilation:</strong> Blood vessels dilate (heatstroke, metabolic, emotional impacts: fear, intense pain).</li>
+            </ul>
+            <h3><span data-lang="es">Sintomatología (por falta de oxigenación):</span><span data-lang="en" style="display:none;">Symptoms (due to lack of oxygenation):</span></h3>
+            <ul>
+                <li data-lang="es">Náuseas/vómitos.</li>
+                <li data-lang="en" style="display:none;">Nausea/vomiting.</li>
+                <li data-lang="es">Palidez-cianosis, piel fría, húmeda, pálida, angustia.</li>
+                <li data-lang="en" style="display:none;">Pallor-cyanosis, cold, clammy, pale skin, anxiety.</li>
+                <li data-lang="es">Respiración débil y superficial.</li>
+                <li data-lang="en" style="display:none;">Weak and shallow breathing.</li>
+                <li data-lang="es">Taquicardia (>100 por minuto).</li>
+                <li data-lang="en" style="display:none;">Tachycardia (>100 per minute).</li>
+                <li data-lang="es">Hipotensión.</li>
+                <li data-lang="en" style="display:none;">Hypotension.</li>
+                <li data-lang="es">Intranquilidad, ansiedad, indiferencia, pérdida de conciencia.</li>
+                <li data-lang="en" style="display:none;">Restlessness, anxiety, indifference, loss of consciousness.</li>
+                <li data-lang="es">Anuria (ausencia de orina).</li>
+                <li data-lang="en" style="display:none;">Anuria (absence of urine).</li>
+                <li data-lang="es">Midriasis (pupilas dilatadas), visión nebulosa.</li>
+                <li data-lang="en" style="display:none;">Mydriasis (dilated pupils), blurred vision.</li>
+            </ul>
+            <h3><span data-lang="es">Primeros Auxilios:</span><span data-lang="en" style="display:none;">First Aid:</span></h3>
+            <ul>
+                <li data-lang="es">Prevenir shock antes de que se produzca.</li>
+                <li data-lang="en" style="display:none;">Prevent shock before it occurs.</li>
+                <li data-lang="es">Mantener paciente acostado, quieto, tranquilo. Abrigar sin calor.</li>
+                <li data-lang="en" style="display:none;">Keep patient lying down, still, calm. Cover without heat.</li>
+                <li data-lang="es">Hidratación fraccionada.</li>
+                <li data-lang="en" style="display:none;">Fractionated hydration.</li>
+                <li data-lang="es">Mantener vía aérea permeable y ventilación.</li>
+                <li data-lang="en" style="display:none;">Maintain open airway and ventilation.</li>
+                <li data-lang="es">Elevar pies $45^{\circ}-90^{\circ}$, cabeza más abajo ($10^{\circ}$) (si no hay traumatismo de cabeza/cuello).</li>
+                <li data-lang="en" style="display:none;">Elevate feet $45^{\circ}-90^{\circ}$, head lower ($10^{\circ}$) (if no head/neck trauma).</li>
+                <li data-lang="es">Controlar hemorragias externas, tratar heridas.</li>
+                <li data-lang="en" style="display:none;">Control external hemorrhages, treat wounds.</li>
+                <li data-lang="es">Soltar ropas.</li>
+                <li data-lang="en" style="display:none;">Loosen clothing.</li>
+                <li data-lang="es">Traslado oportuno, sin suspender medidas.</li>
+                <li data-lang="en" style="display:none;">Timely transfer, without suspending measures.</li>
+                <li data-lang="es">Si inconsciente, acostar de lado o boca abajo.</li>
+                <li data-lang="en" style="display:none;">If unconscious, lay on side or face down.</li>
+            </ul>
+            <p class="warning" data-lang="es">Factores que lo agravan: Poner de pie/posición vertical, aplicar calor, deshidratación (no aportar líquidos), retrasar traslado.</p>
+            <p class="warning" data-lang="en" style="display:none;">Aggravating factors: Standing/vertical position, applying heat, dehydration (not providing fluids), delaying transport.</p>
+        </section>
+
+        <section id="paro-cardiorrespiratorio" class="rpp-section">
+            <h2 data-lang="es">Capítulo VI: Paro Cardiorrespiratorio (RCP)</h2>
+            <h2 data-lang="en" style="display:none;">Chapter VI: Cardiorespiratory Arrest (CPR)</h2>
+            <p data-lang="es">Máxima emergencia individual. El no hacer nada o hacerlo incorrectamente lleva a la muerte en 3-4 minutos. Cese de actividad cardíaca y respiratoria en personas con expectativa de vida.</p>
+            <p data-lang="en" style="display:none;">Maximum individual emergency. Doing nothing or doing it incorrectly leads to death in 3-4 minutes. Cessation of cardiac and respiratory activity in people with life expectancy.</p>
+            <h3><span data-lang="es">Fases del manejo:</span><span data-lang="en" style="display:none;">Management Phases:</span></h3>
+            <ol>
+                <li data-lang="es"><strong>Reanimación Cardiopulmonar Básica:</strong> Permeabilización vía aérea, restablecimiento de ventilación y circulación.</li>
+                <li data-lang="en" style="display:none;"><strong>Basic Cardiopulmonary Resuscitation:</strong> Airway patency, restoration of ventilation and circulation.</li>
+                <li data-lang="es">Reanimación Cardiopulmonar Avanzada.</li>
+                <li data-lang="en" style="display:none;">Advanced Cardiopulmonary Resuscitation.</li>
+                <li data-lang="es">Cuidados intensivos post-resucitación.</li>
+                <li data-lang="en" style="display:none;">Post-resuscitation intensive care.</li>
+            </ol>
+            <p data-lang="es">Para primeros auxilios básicos, solo se considera la primera fase.</p>
+            <p data-lang="en" style="display:none;">For basic first aid, only the first phase is considered.</p>
+
+            <h3><span data-lang="es">Paro Respiratorio:</span><span data-lang="en" style="display:none;">Respiratory Arrest:</span></h3>
+            <p data-lang="es">Detención de la respiración (gradual o brusca). Consecuencia de paro cardíaco, envenenamientos, asfixias, gases tóxicos, obstrucción.</p>
+            <p data-lang="en" style="display:none;">Cessation of breathing (gradual or sudden). Consequence of cardiac arrest, poisonings, asphyxia, toxic gases, obstruction.</p>
+            <h4><span data-lang="es">Sintomatología de insuficiencia respiratoria:</span><span data-lang="en" style="display:none;">Symptoms of respiratory failure:</span></h4>
+            <ul>
+                <li data-lang="es">Apnea (ausencia).</li>
+                <li data-lang="en" style="display:none;">Apnea (absence).</li>
+                <li data-lang="es">Disnea (dificultad).</li>
+                <li data-lang="en" style="display:none;">Dyspnea (difficulty).</li>
+                <li data-lang="es">Ruidos respiratorios (estertores, sibilancias), quejidos.</li>
+                <li data-lang="en" style="display:none;">Respiratory noises (rales, wheezing), groans.</li>
+                <li data-lang="es">Cianosis central.</li>
+                <li data-lang="en" style="display:none;">Central cyanosis.</li>
+                <li data-lang="es">Somnolencia progresiva.</li>
+                <li data-lang="en" style="display:none;">Progressive drowsiness.</li>
+                <li data-lang="es">Ausencia de movimientos torácicos, retracción intercostal.</li>
+                <li data-lang="en" style="display:none;">Absence of thoracic movements, intercostal retraction.</li>
+            </ul>
+            <h4><span data-lang="es">Ventilación Artificial:</span><span data-lang="en" style="display:none;">Artificial Ventilation:</span></h4>
+            <p data-lang="es">Procedimiento para hacer entrar aire a los pulmones de una persona inhabilitada.</p>
+            <p data-lang="en" style="display:none;">Procedure to get air into the lungs of a disabled person.</p>
+            <h5><span data-lang="es">Normas Generales:</span><span data-lang="en" style="display:none;">General Rules:</span></h5>
+            <ul>
+                <li data-lang="es">Aplicar lo antes posible.</li>
+                <li data-lang="en" style="display:none;">Apply as soon as possible.</li>
+                <li data-lang="es">Retirar cuerpos extraños.</li>
+                <li data-lang="en" style="display:none;">Remove foreign objects.</li>
+                <li data-lang="es">Aplicación continua y rítmica.</li>
+                <li data-lang="en" style="display:none;">Continuous and rhythmic application.</li>
+                <li data-lang="es">No suspender hasta que respire por sí mismo.</li>
+                <li data-lang="en" style="display:none;">Do not stop until breathing on their own.</li>
+                <li data-lang="es">Mantener temperatura corporal.</li>
+                <li data-lang="en" style="display:none;">Maintain body temperature.</li>
+            </ul>
+            <h5><span data-lang="es">Métodos:</span><span data-lang="en" style="display:none;">Methods:</span></h5>
+            <ul>
+                <li data-lang="es"><strong>Boca a boca:</strong> Más práctico y eficaz.
+                    <ul>
+                        <li data-lang="es"><strong>Técnica:</strong> Posición horizontal, permeabilizar vías aéreas (cuello hiperextendido), cerrar aletas nasales, sellar boca con la suya, insuflar hasta expansión torácica, retirar boca, observar exhalación, repetir 12/minuto.</li>
+                        <li data-lang="en" style="display:none;"><strong>Technique:</strong> Horizontal position, open airway (hyperextended neck), close nostrils, seal mouth with yours, inflate until chest expands, remove mouth, observe exhalation, repeat 12/minute.</li>
+                    </ul>
+                </li>
+                <li data-lang="es">Boca a nariz (si boca edematizada o maxilares contraídos).</li>
+                <li data-lang="en" style="display:none;">Mouth-to-nose (if mouth edematous or jaws clenched).</li>
+                <li data-lang="es">Boca a boca-nariz (recién nacidos).</li>
+                <li data-lang="en" style="display:none;">Mouth-to-mouth-nose (newborns).</li>
+                <li data-lang="es"><strong>Despeje mecánico de vías aéreas bajas:</strong> Dedos (faríngeo), Maniobra de Heimlich (golpe entre escápulas, compresión torácica/abdominal).</li>
+                <li data-lang="en" style="display:none;"><strong>Mechanical clearing of lower airways:</strong> Fingers (pharyngeal), Heimlich maneuver (blow between shoulder blades, chest/abdominal compression).</li>
+            </ul>
+
+            <h3><span data-lang="es">Paro Cardíaco:</span><span data-lang="en" style="display:none;">Cardiac Arrest:</span></h3>
+            <p data-lang="es">Detención de actividad cardíaca, sangre no es bombeada. Ocurre en personas con expectativa de vida. La falta de circulación lleva a pérdida de conciencia en 15 segundos, muerte cerebral en 3-5 minutos.</p>
+            <p data-lang="en" style="display:none;">Cessation of cardiac activity, blood is not pumped. Occurs in people with life expectancy. Lack of circulation leads to loss of consciousness in 15 seconds, brain death in 3-5 minutes.</p>
+            <h4><span data-lang="es">Sintomatología:</span><span data-lang="en" style="display:none;">Symptoms:</span></h4>
+            <ul>
+                <li data-lang="es">Inconsciencia.</li>
+                <li data-lang="en" style="display:none;">Unconsciousness.</li>
+                <li data-lang="es">Respiración boqueante, apnea.</li>
+                <li data-lang="en" style="display:none;">Gasping breathing, apnea.</li>
+                <li data-lang="es">Midriasis máxima (30-60 segundos).</li>
+                <li data-lang="en" style="display:none;">Maximum mydriasis (30-60 seconds).</li>
+                <li data-lang="es">Cianosis o palidez.</li>
+                <li data-lang="en" style="display:none;">Cyanosis or pallor.</li>
+                <li data-lang="es">Ausencia de pulso en grandes arterias (carótida, femoral, braquial).</li>
+                <li data-lang="en" style="display:none;">Absence of pulse in large arteries (carotid, femoral, brachial).</li>
+            </ul>
+            
+            <h3><span data-lang="es">Masaje Cardíaco Externo:</span><span data-lang="en" style="display:none;">External Cardiac Massage:</span></h3>
+            <p data-lang="es">Sobre la pared torácica.</p>
+            <p data-lang="en" style="display:none;">On the chest wall.</p>
+            <h4><span data-lang="es">Procedimientos:</span><span data-lang="en" style="display:none;">Procedures:</span></h4>
+            <ul>
+                <li data-lang="es">Paciente en decúbito dorsal sobre superficie dura.</li>
+                <li data-lang="en" style="display:none;">Patient in dorsal decubitus on a hard surface.</li>
+                <li data-lang="es">Colocarse a un lado del accidentado.</li>
+                <li data-lang="en" style="display:none;">Position oneself to one side of the injured person.</li>
+                <li data-lang="es">Permeabilizar vías aéreas y ventilar.</li>
+                <li data-lang="en" style="display:none;">Clear airways and ventilate.</li>
+                <li data-lang="es">Presionar con talón de la mano en unión de tercio medio e inferior del esternón.</li>
+                <li data-lang="en" style="display:none;">Press with the heel of the hand on the junction of the middle and lower third of the sternum.</li>
+                <li data-lang="es">Deprimir tórax 5 cm.</li>
+                <li data-lang="en" style="display:none;">Depress chest 5 cm.</li>
+                <li data-lang="es">Brazos rectos, fuerza con peso del cuerpo.</li>
+                <li data-lang="en" style="display:none;">Arms straight, force with body weight.</li>
+                <li data-lang="es">Frecuencia: 60-80 por minuto (uno por segundo).</li>
+                <li data-lang="en" style="display:none;">Frequency: 60-80 per minute (one per second).</li>
+            </ul>
+            <h4><span data-lang="es">Precauciones:</span><span data-lang="en" style="display:none;">Precautions:</span></h4>
+            <ul>
+                <li data-lang="es">Paciente sobre superficie dura.</li>
+                <li data-lang="en" style="display:none;">Patient on a hard surface.</li>
+                <li class="warning" data-lang="es">No presionar con los dedos.</li>
+                <li class="warning" data-lang="en" style="display:none;">Do not press with fingers.</li>
+                <li data-lang="es">Presión perpendicular al suelo.</li>
+                <li data-lang="en" style="display:none;">Pressure perpendicular to the floor.</li>
+                <li data-lang="es">Presionar con talón de la mano en sitio exacto.</li>
+                <li data-lang="en" style="display:none;">Press with the heel of the hand in the exact spot.</li>
+            </ul>
+            <h4><span data-lang="es">Riesgos:</span><span data-lang="en" style="display:none;">Risks:</span></h4>
+            <ul>
+                <li data-lang="es">Fracturas costales, esternón.</li>
+                <li data-lang="en" style="display:none;">Rib fractures, sternum.</li>
+                <li data-lang="es">Rupturas viscerales (hígado, estómago).</li>
+                <li data-lang="en" style="display:none;">Visceral ruptures (liver, stomach).</li>
+            </ul>
+        </section>
+
+        <section id="envenenamientos">
+            <h2 data-lang="es">Capítulo VII: Envenenamiento e Intoxicaciones</h2>
+            <h2 data-lang="en" style="display:none;">Chapter VII: Poisoning and Intoxications</h2>
+            <p data-lang="es">El tóxico debe extraerse con la mayor premura. Los primeros auxilios varían según tipo de tóxico, vía de entrada, estado de conciencia, y existencia de antídoto.</p>
+            <p data-lang="en" style="display:none;">The toxic substance must be removed as quickly as possible. First aid varies according to the type of toxic substance, route of entry, state of consciousness, and existence of an antidote.</p>
+            <h3><span data-lang="es">Intoxicación por vía oral:</span><span data-lang="en" style="display:none;">Oral Poisoning:</span></h3>
+            <ul>
+                <li data-lang="es">Actuar rápidamente.</li>
+                <li data-lang="en" style="display:none;">Act quickly.</li>
+                <li data-lang="es">Si inconsciente: Cabeza ladeada, trasladar con indicio del tóxico al hospital.</li>
+                <li data-lang="en" style="display:none;">If unconscious: Head to the side, transport to hospital with evidence of the toxic substance.</li>
+                <li data-lang="es">Si consciente: Averiguar tipo de tóxico, antídoto.</li>
+                <li data-lang="en" style="display:none;">If conscious: Determine type of toxic substance, antidote.</li>
+                <li data-lang="es">Si tóxico causa quemaduras o es hidrocarburo: NO provocar vómitos. Dar helados, aceite vegetal, trasladar.</li>
+                <li data-lang="en" style="display:none;">If toxic substance causes burns or is a hydrocarbon: DO NOT induce vomiting. Give ice cream, vegetable oil, transport.</li>
+                <li data-lang="es">Para otros tóxicos: Provocar vómitos (solución salina o mostaza en agua tibia, estimulación manual). Diluir con agua/limonada/leche. Trasladar al hospital.</li>
+                <li data-lang="en" style="display:none;">For other toxic substances: Induce vomiting (saline solution or mustard in warm water, manual stimulation). Dilute with water/lemonade/milk. Transport to hospital.</li>
+                <li data-lang="es">Antídoto universal: 1 taza de leche + 1 clara de huevo + 1 pan quemado molido.</li>
+                <li data-lang="en" style="display:none;">Universal antidote: 1 cup of milk + 1 egg white + 1 ground burnt toast.</li>
+            </ul>
+            <h3><span data-lang="es">Intoxicación por Alimentos:</span><span data-lang="en" style="display:none;">Food Poisoning:</span></h3>
+            <p data-lang="es">Evacuar estómago, al hospital.</p>
+            <p data-lang="en" style="display:none;">Evacuate stomach, to hospital.</p>
+            <h3><span data-lang="es">Intoxicación por Inhalación:</span><span data-lang="en" style="display:none;">Inhalation Poisoning:</span></h3>
+            <p data-lang="es">Más frecuente CO2 y Cloro.</p>
+            <p data-lang="en" style="display:none;">Most common are CO2 and Chlorine.</p>
+            <h4><span data-lang="es">Primeros Auxilios:</span><span data-lang="en" style="display:none;">First Aid:</span></h4>
+            <ul>
+                <li data-lang="es">Retirar víctima de atmósfera contaminada (con protector, pañuelo mojado, gateando, amarrado con cordel).</li>
+                <li data-lang="en" style="display:none;">Remove victim from contaminated atmosphere (with protector, wet handkerchief, crawling, tied with rope).</li>
+                <li data-lang="es">Ventilar estancia.</li>
+                <li data-lang="en" style="display:none;">Ventilate room.</li>
+                <li data-lang="es">Respiración artificial si no respira.</li>
+                <li data-lang="en" style="display:none;">Artificial respiration if not breathing.</li>
+                <li data-lang="es">Cuidado de paciente inconsciente.</li>
+                <li data-lang="en" style="display:none;">Care for unconscious patient.</li>
+                <li data-lang="es">Si consciente, semisentado para traslado.</li>
+                <li data-lang="en" style="display:none;">If conscious, semi-seated for transport.</li>
+            </ul>
+            <h3><span data-lang="es">Intoxicación por piel:</span><span data-lang="en" style="display:none;">Skin Poisoning:</span></h3>
+            <p data-lang="es">Sustancias químicas de rápida absorción.</p>
+            <p data-lang="en" style="display:none;">Rapidly absorbed chemical substances.</p>
+            <h4><span data-lang="es">Primeros Auxilios:</span><span data-lang="en" style="display:none;">First Aid:</span></h4>
+            <ul>
+                <li data-lang="es">Protegerse con guantes, ropas secas.</li>
+                <li data-lang="en" style="display:none;">Protect yourself with gloves, dry clothes.</li>
+                <li data-lang="es">Retirar accidentado de la fuente.</li>
+                <li data-lang="en" style="display:none;">Remove injured person from the source.</li>
+                <li data-lang="es">Eliminar ropas y lavar con abundante agua.</li>
+                <li data-lang="en" style="display:none;">Remove clothing and wash with abundant water.</li>
+                <li data-lang="es">Posición de coma si inconsciente.</li>
+                <li data-lang="en" style="display:none;">Coma position if unconscious.</li>
+                <li data-lang="es">Maniobras de reanimación si corresponde.</li>
+                <li data-lang="en" style="display:none;">Resuscitation maneuvers if applicable.</li>
+                <li data-lang="es">Tratar el shock.</li>
+                <li data-lang="en" style="display:none;">Treat for shock.</li>
+                <li data-lang="es">Al hospital lo antes posible.</li>
+                <li data-lang="en" style="display:none;">To the hospital as soon as possible.</li>
+            </ul>
+            <h3><span data-lang="es">Emponzoñamientos (Picaduras y/o mordeduras):</span><span data-lang="en" style="display:none;">Envenomations (Stings and/or bites):</span></h3>
+            <p data-lang="es">Acción rápida y oportuna. Causas: Accidentales (insectos, arácnidos, ofidios, peces, vegetales, hongos), Suicidios, Homicidios. Sintomatología inespecífica.</p>
+            <p data-lang="en" style="display:none;">Prompt and timely action. Causes: Accidental (insects, arachnids, snakes, fish, plants, fungi), Suicides, Homicides. Nonspecific symptoms.</p>
+        </section>
+
+        <section id="transporte">
+            <h2 data-lang="es">Capítulo VIII: Estabilización y Transporte</h2>
+            <h2 data-lang="en" style="display:none;">Chapter VIII: Stabilization and Transport</h2>
+            <p data-lang="es">Conjunto de técnicas para transportar de forma segura a un lesionado.</p>
+            <p data-lang="en" style="display:none;">Set of techniques to safely transport an injured person.</p>
+            <h3><span data-lang="es">Reglas generales:</span><span data-lang="en" style="display:none;">General rules:</span></h3>
+            <ul>
+                <li data-lang="es">No actuar precipitadamente.</li>
+                <li data-lang="en" style="display:none;">Do not act rashly.</li>
+                <li data-lang="es">Trasladar solo si es absolutamente necesario.</li>
+                <li data-lang="en" style="display:none;">Transport only if absolutely necessary.</li>
+                <li data-lang="es">Lesionado grave en posición horizontal (salvo excepciones).</li>
+                <li data-lang="en" style="display:none;">Seriously injured person in horizontal position (with exceptions).</li>
+                <li data-lang="es">Tipo y rapidez de transporte dependen de lesión y medios.</li>
+                <li data-lang="en" style="display:none;">Type and speed of transport depend on injury and means.</li>
+                <li data-lang="es">Fracturas deben inmovilizarse en el sitio (salvo riesgos inminentes).</li>
+                <li data-lang="en" style="display:none;">Fractures must be immobilized on site (except for imminent risks).</li>
+                <li data-lang="es">Dar primeros auxilios antes del traslado.</li>
+                <li data-lang="en" style="display:none;">Provide first aid before transport.</li>
+                <li data-lang="es">Mantener temperatura normal.</li>
+                <li data-lang="en" style="display:none;">Maintain normal temperature.</li>
+                <li data-lang="es">Si en camilla, fijar al paciente, pies hacia adelante (salvo si se observa cara, descenso, ascensos).</li>
+                <li data-lang="en" style="display:none;">If on a stretcher, secure the patient, feet first (unless observing face, descending, ascending).</li>
+            </ul>
+            <h3><span data-lang="es">Tipos de Transporte:</span><span data-lang="en" style="display:none;">Types of Transport:</span></h3>
+            <ul>
+                <li data-lang="es"><strong>a) Camillla con cuatro operadores:</strong> Uno delante, uno atrás, dos a los lados. Iniciar marcha con pie coordinado.</li>
+                <li data-lang="en" style="display:none;"><strong>a) Stretcher with four operators:</strong> One in front, one in back, two on the sides. Start walking with coordinated foot.</li>
+                <li data-lang="es"><strong>b) Movilización en bloque (paciente acostado):</strong> Camilla al lado, 3 operadores (cabeza/hombros, cintura/caderas, rodillas/pies) giran víctima sobre su eje, 4º coloca camilla, devuelven paciente. Mantener eje de columna y cuello.</li>
+                <li data-lang="en" style="display:none;"><strong>b) Block mobilization (patient lying down):</strong> Stretcher to the side, 3 operators (head/shoulders, waist/hips, knees/feet) turn victim on their axis, 4th places stretcher, return patient. Maintain spinal and neck alignment.</li>
+                <li data-lang="es"><strong>c) Silla de mano (dos operadores):</strong> Paciente de pies. Operadores se toman de muñecas y hombro, se agachan, paciente se sienta.</li>
+                <li data-lang="en" style="display:none;"><strong>c) Hand chair (two operators):</strong> Patient standing. Operators grasp wrists and shoulder, squat down, patient sits.</li>
+            </ul>
+            <h3><span data-lang="es">Vendajes:</span><span data-lang="en" style="display:none;">Bandages:</span></h3>
+            <p data-lang="es">Aplicación de tela blanda a zona lesionada.</p>
+            <p data-lang="en" style="display:none;">Application of soft fabric to injured area.</p>
+            <h4><span data-lang="es">Objetivos:</span><span data-lang="en" style="display:none;">Objectives:</span></h4>
+            <ul>
+                <li data-lang="es">Proteger, comprimir, sostener, inmovilizar.</li>
+                <li data-lang="en" style="display:none;">Protect, compress, support, immobilize.</li>
+            </ul>
+            <h3><span data-lang="es">Férulas:</span><span data-lang="en" style="display:none;">Splints:</span></h3>
+            <p data-lang="es">Sistema de inmovilización de uno o más segmentos corporales. Cualquier material rígido/semirrígido.</p>
+            <p data-lang="en" style="display:none;">System for immobilizing one or more body segments. Any rigid/semi-rigid material.</p>
+        </section>
+
+        <section id="desastres">
+            <h2 data-lang="es">Capítulo IX: Desastres</h2>
+            <h2 data-lang="en" style="display:none;">Chapter IX: Disasters</h2>
+            <p data-lang="es"><strong>Definición:</strong> Crisis social extrema donde sistemas se vuelven disfuncionales, aumento súbito de demanda de recursos.</p>
+            <p data-lang="en" style="display:none;"><strong>Definition:</strong> Extreme social crisis where systems become dysfunctional, sudden increase in resource demand.</p>
+            <h3><span data-lang="es">Respuestas emocionales frente al desastre:</span><span data-lang="en" style="display:none;">Emotional responses to disaster:</span></h3>
+            <p data-lang="es">Víctimas y personal de rescate reaccionan diferente. Etapas: Heroica, luna de miel, negación, aceptación, vuelta a la normalidad, rehabilitación.</p>
+            <p data-lang="en" style="display:none;">Victims and rescue personnel react differently. Stages: Heroic, honeymoon, denial, acceptance, return to normalcy, rehabilitation.</p>
+            <ul>
+                <li data-lang="es">Más del 10% reacciona con pánico o pasividad total.</li>
+                <li data-lang="en" style="display:none;">More than 10% react with panic or total passivity.</li>
+                <li data-lang="es">70% funciona adecuadamente pero son vulnerables, necesitan apoyo psicológico, reasignar tareas.</li>
+                <li data-lang="en" style="display:none;">70% function adequately but are vulnerable, need psychological support, reassign tasks.</li>
+            </ul>
+            <h4><span data-lang="es">Manejo del histérico:</span><span data-lang="en" style="display:none;">Management of the hysterical:</span></h4>
+            <ul>
+                <li data-lang="es">Trasladar de inmediato del escenario.</li>
+                <li data-lang="en" style="display:none;">Immediately remove from the scene.</li>
+                <li data-lang="es">A cargo de persona responsable.</li>
+                <li data-lang="en" style="display:none;">Under the care of a responsible person.</li>
+                <li class="warning" data-lang="es">Nunca golpear o usar fuerza.</li>
+                <li class="warning" data-lang="en" style="display:none;">Never hit or use force.</li>
+                <li data-lang="es">Órdenes simples, calmar.</li>
+                <li data-lang="en" style="display:none;">Simple commands, calm down.</li>
+            </ul>
+            <h4><span data-lang="es">Manejo del sumiso:</span><span data-lang="en" style="display:none;">Management of the submissive:</span></h4>
+            <ul>
+                <li data-lang="es">Evacuación del escenario, acostado.</li>
+                <li data-lang="en" style="display:none;">Evacuation from the scene, lying down.</li>
+                <li data-lang="es">Tratar shock con valor, apoyo psicológico, elevando pies. NO recibir nada por boca.</li>
+                <li data-lang="en" style="display:none;">Treat shock with courage, psychological support, elevating feet. DO NOT receive anything orally.</li>
+            </ul>
+            <p data-lang="es">Importante organizar área y derivar correctamente para no trasladar el desastre al hospital. Establecer comando del incidente.</p>
+            <p data-lang="en" style="display:none;">It is important to organize the area and refer people correctly to avoid transferring the disaster to the hospital. Establish incident command.</p>
+            <p data-lang="es">En Chile, ONEMI (Oficina Nacional de Emergencia del Ministerio del Interior) es clave en organización civil ante desastres.</p>
+            <p data-lang="en" style="display:none;">In Chile, ONEMI (National Emergency Office of the Ministry of the Interior) is key in civil organization for disasters.</p>
+            <h3><span data-lang="es">Cronología de los desastres:</span><span data-lang="en" style="display:none;">Chronology of disasters:</span></h3>
+            <p data-lang="es">Tres grandes etapas: ANTES, DURANTE, DESPUÉS.</p>
+            <p data-lang="en" style="display:none;">Three main stages: BEFORE, DURING, AFTER.</p>
+            <ul>
+                <li data-lang="es"><strong>ANTES:</strong> Preparativos (planes, operativos, coordinaciones, simulacros).</li>
+                <li data-lang="en" style="display:none;"><strong>BEFORE:</strong> Preparations (plans, operations, coordination, drills).</li>
+                <li data-lang="es"><strong>DURANTE:</strong> Inicia antes de catástrofe.
+                    <ul>
+                        <li data-lang="es"><strong>Inmediatas:</strong> Amenaza (advertencia, ansiedad, negación), Impacto (evento, desorganización, confusión, Hora Cero), Remedio/heroica (solidaridad, reacciones conductuales).</li>
+                        <li data-lang="en" style="display:none;"><strong>Immediate:</strong> Threat (warning, anxiety, denial), Impact (event, disorganization, confusion, Zero Hour), Remedy/heroic (solidarity, behavioral reactions).</li>
+                        <li data-lang="es"><strong>Consolidadas:</strong> Desilusión (asumir pérdidas, desesperanza), Inventario de recursos (apatía, aislamiento, depresión).</li>
+                        <li data-lang="en" style="display:none;"><strong>Consolidated:</strong> Disillusionment (accepting losses, hopelessness), Resource inventory (apathy, isolation, depression).</li>
+                    </ul>
+                </li>
+                <li data-lang="es"><strong>DESPUÉS:</strong> Vuelta a la normalidad. Evaluación de daños, rehabilitación (reconstrucción corto/largo plazo), reanudación.</li>
+                <li data-lang="en" style="display:none;"><strong>AFTER:</strong> Return to normalcy. Damage assessment, rehabilitation (short/long-term reconstruction), resumption.</li>
+            </ul>
+        </section>
+
+        <section id="miscelaneas">
+            <h2 data-lang="es">Capítulo X: Misceláneas</h2>
+            <h2 data-lang="en" style="display:none;">Chapter X: Miscellaneous</h2>
+            <h3><span data-lang="es">Urgencias Médicas:</span><span data-lang="en" style="display:none;">Medical Emergencies:</span></h3>
+            <p data-lang="es">Situación donde la vida de una persona está en crítica por problemas de resolución médica (descompensaciones de enfermedades existentes).</p>
+            <p data-lang="en" style="display:none;">Situation where a person's life is critical due to medical resolution problems (decompensation of existing diseases).</p>
+            
+            <h3><span data-lang="es">FIEBRE:</span><span data-lang="en" style="display:none;">FEVER:</span></h3>
+            <p data-lang="es">Elevación de temperatura corporal sobre el límite normal (promedio $37.5^{\circ}C$). Intervenir en cifras excesivamente altas.</p>
+            <p data-lang="en" style="display:none;">Elevation of body temperature above the normal limit (average $37.5^{\circ}C$). Intervene at excessively high figures.</p>
+            <h4><span data-lang="es">Medidas de Primeros auxilios:</span><span data-lang="en" style="display:none;">First aid measures:</span></h4>
+            <ul>
+                <li data-lang="es">Desabrigar - desnudar.</li>
+                <li data-lang="en" style="display:none;">Uncover - undress.</li>
+                <li data-lang="es">Compresas frías (no heladas) en frente, cabeza y cuello. Cambiar frecuentemente.</li>
+                <li data-lang="en" style="display:none;">Cold (not icy) compresses on forehead, head, and neck. Change frequently.</li>
+                <li data-lang="es">Compresas tibias en abdomen, tórax, axilas, pliegues inguinales. Dejar secar.</li>
+                <li data-lang="en" style="display:none;">Warm compresses on abdomen, chest, armpits, groin folds. Let dry.</li>
+                <li data-lang="es">Dar líquidos en pequeñas cantidades constantemente.</li>
+                <li data-lang="en" style="display:none;">Give liquids in small quantities constantly.</li>
+                <li data-lang="es">Suministrar medicamentos solo con receta médica clara.</li>
+                <li data-lang="en" style="display:none;">Administer medications only with a clear medical prescription.</li>
+                <li data-lang="es">Traslado a hospital si no cede en 3 horas.</li>
+                <li data-lang="en" style="display:none;">Transfer to hospital if not relieved within 3 hours.</li>
+            </ul>
+
+            <h3><span data-lang="es">HIPOTERMIA:</span><span data-lang="en" style="display:none;">HYPOTHERMIA:</span></h3>
+            <p data-lang="es">Pérdidas de calor más rápidas que la producción.</p>
+            <p data-lang="en" style="display:none;">Heat loss faster than production.</p>
+            <p data-lang="es">Disipación de calor por: Irradiación (>50%), Convección (eliminar aire caliente, inspirar frío), Conducción (contacto con elementos fríos), Evaporación.</p>
+            <p data-lang="en" style="display:none;">Heat dissipation by: Radiation (>50%), Convection (eliminating hot air, inhaling cold), Conduction (contact with cold elements), Evaporation.</p>
+            <p data-lang="es"><strong>Congelamiento:</strong> Daño en tejidos (no necesario < $0^{\circ}C$).</p>
+            <p data-lang="en" style="display:none;"><strong>Frostbite:</strong> Tissue damage (not necessarily < $0^{\circ}C$).</p>
+            <p data-lang="es"><strong>Enfriamiento:</strong> No daño tisular, pero alteraciones metabólicas.</p>
+            <p data-lang="en" style="display:none;"><strong>Cooling:</strong> No tissue damage, but metabolic alterations.</p>
+            <p data-lang="es"><strong>Factores de riesgo ambientales:</strong> Altitud, Latitud, Viento, Humedad.</p>
+            <p data-lang="en" style="display:none;"><strong>Environmental risk factors:</strong> Altitude, Latitude, Wind, Humidity.</p>
+            <p data-lang="es"><strong>Factores de riesgo internos:</strong> Edad, estado de salud/físico, nutricional, humedad de piel, problemas hormonales, trastornos nerviosos/musculares.</p>
+            <p data-lang="en" style="display:none;"><strong>Internal risk factors:</strong> Age, health/physical condition, nutritional status, skin moisture, hormonal problems, nervous/muscular disorders.</p>
+            <h4><span data-lang="es">Efectos del frío:</span><span data-lang="en" style="display:none;">Effects of cold:</span></h4>
+            <ul>
+                <li data-lang="es"><strong>Locales:</strong> Dolor, insensibilidad, calambres, palidez, cianosis.</li>
+                <li data-lang="en" style="display:none;"><strong>Local:</strong> Pain, numbness, cramps, pallor, cyanosis.</li>
+                <li data-lang="es"><strong>Psicológicos:</strong> Temor, pánico, apatía.</li>
+                <li data-lang="en" style="display:none;"><strong>Psychological:</strong> Fear, panic, apathy.</li>
+                <li data-lang="es"><strong>Generales:</strong> Fatiga, somnolencia, dolor precordial, paro por fibrilación cardíaca, pérdida de memoria, coma y muerte.</li>
+                <li data-lang="en" style="display:none;"><strong>General:</strong> Fatigue, drowsiness, precordial pain, cardiac fibrillation arrest, memory loss, coma, and death.</li>
+            </ul>
+            <h4><span data-lang="es">Soporte vital en síndrome de congelamiento:</span><span data-lang="en" style="display:none;">Life support in frostbite syndrome:</span></h4>
+            <ul>
+                <li data-lang="es">Reanimación (A B C).</li>
+                <li data-lang="en" style="display:none;">Resuscitation (A B C).</li>
+                <li data-lang="es">Reposo estricto.</li>
+                <li data-lang="en" style="display:none;">Strict rest.</li>
+                <li data-lang="es">Monitoreo pulsos, frecuencia cardíaca, respiración.</li>
+                <li data-lang="en" style="display:none;">Monitoring pulses, heart rate, respiration.</li>
+                <li data-lang="es">Traslado inmediato a refugio con temperatura alta, sin corrientes de aire.</li>
+                <li data-lang="en" style="display:none;">Immediate transfer to a shelter with high temperature, no drafts.</li>
+                <li data-lang="es">Quitar ropas húmedas/ajustadas.</li>
+                <li data-lang="en" style="display:none;">Remove wet/tight clothing.</li>
+                <li data-lang="es">Retirar objetos metálicos.</li>
+                <lang data-en style="display:none;">Remove metal objects.</li>
+                <li data-lang="es">Proteger zonas congeladas de golpes/fricciones.</li>
+                <lang data-en style="display:none;">Protect frozen areas from blows/friction.</li>
+                <li data-lang="es">Abrigo externo, calentamiento progresivo (no brusco).</li>
+                <lang data-en style="display:none;">External covering, gradual warming (not abrupt).</li>
+                <li data-lang="es">Líquidos calientes (no en exceso).</li>
+                <li data-lang="en" style="display:none;">Hot liquids (not in excess).</li>
+                <li data-lang="es">Traslado urgente.</li>
+                <li data-lang="en" style="display:none;">Urgent transfer.</li>
+            </ul>
+            <p class="warning" data-lang="es">Qué NO hacer: No frotar, no golpear, no friccionar con nieve, no poner calentadores sin protección, no poner estufas cerca, no suministrar licores, no dar líquidos si hay alteración de conciencia.</p>
+            <p class="warning" data-lang="en" style="display:none;">What NOT to do: Do not rub, do not hit, do not rub with snow, do not place unprotected heaters, do not place stoves nearby, do not administer alcohol, do not give liquids if there is altered consciousness.</p>
+        </section>
+
+        <section id="talleres">
+            <h2 data-lang="es">Talleres Prácticos</h2>
+            <h2 data-lang="en" style="display:none;">Practical Workshops</h2>
+            
+            <h3><span data-lang="es">Taller 1: Técnicas de Inmovilización</span><span data-lang="en" style="display:none;">Workshop 1: Immobilization Techniques</span></h3>
+            <p data-lang="es">Criterios generales: No mover accidentado, inmovilizar de cabeza a pies, asignar tareas a ayudantes, usted comanda.</p>
+            <p data-lang="en" style="display:none;">General criteria: Do not move the injured person, immobilize from head to toe, assign tasks to helpers, you command.</p>
+            <h4><span data-lang="es">Procedimiento:</span><span data-lang="en" style="display:none;">Procedure:</span></h4>
+            <ol>
+                <li data-lang="es">Evaluación neurológica breve (sensibilidad, movilidad, dolor, hormigueo).</li>
+                <li data-lang="en" style="display:none;">Brief neurological evaluation (sensation, mobility, pain, tingling).</li>
+                <li data-lang="es">Inmovilizar cuello y despejar vía aérea.</li>
+                <li data-lang="en" style="display:none;">Immobilize neck and clear airway.</li>
+                <li data-lang="es">Inmovilizar extremidades (férulas).</li>
+                <li data-lang="en" style="display:none;">Immobilize limbs (splints).</li>
+                <li data-lang="es">Comandar el traslado a tabla de rescate larga, en bloque.</li>
+                <li data-lang="en" style="display:none;">Command the transfer to a long rescue board, en bloc.</li>
+                <li data-lang="es">Asegurar inmovilizaciones (cuello con bolsas de arena/vendajes a tabla, extremidades con correas/vendajes).</li>
+                <li data-lang="en" style="display:none;">Secure immobilizations (neck with sandbags/bandages to board, limbs with straps/bandages).</li>
+                <li data-lang="es">Trasladar con seguridad.</li>
+                <li data-lang="en" style="display:none;">Transport safely.</li>
+            </ol>
+            <h4><span data-lang="es">Vendajes:</span><span data-lang="en" style="display:none;">Bandages:</span></h4>
+            <p data-lang="es">Definición: Elemento de tela blanda que se fija a una zona lesionada.</p>
+            <p data-lang="en" style="display:none;">Definition: Soft fabric element fixed to an injured area.</p>
+            <p data-lang="es">Objetivos: Proteger, comprimir, sostener, inmovilizar.</p>
+            <p data-lang="en" style="display:none;">Objectives: Protect, compress, support, immobilize.</p>
+            <p data-lang="es">Reglas generales: Operador al frente, escoger ancho adecuado, empezar/terminar por parte más visible, rollo en alto (no apretar), largo y vueltas según objetivo, mismo espesor, cómodo e indoloro, vendar de izquierda a derecha (o viceversa si zurdo), intensidad según objetivo, extremidades en posición funcional, no desperdiciar material, imbricados comprimen mitad de vuelta anterior, acojinar pliegues, renovar si deshecho/húmedo/maloliente/inoperante.</p>
+            <p data-lang="en" style="display:none;">General rules: Operator in front, choose adequate width, start/end at most visible part, roll high (do not squeeze), length and turns according to objective, same thickness, comfortable and painless, bandage from left to right (or vice versa if left-handed), intensity according to objective, limbs in functional position, do not waste material, overlapping compress half of previous turn, cushion folds, renew if undone/wet/smelly/inoperable.</p>
+            <p class="info-box" data-lang="es">Puntos a recordar: Bienestar del paciente. Dos superficies cutáneas nunca en contacto bajo vendaje.</p>
+            <p class="info-box" data-lang="en" style="display:none;">Points to remember: Patient's well-being. Two skin surfaces should never be in contact under the bandage.</p>
+            <p data-lang="es">Complicaciones: Flictenas por roce, dolor/hormigueo por compresión excesiva, edema/anoxia distal, escaras necróticas, rigidez articular, ulceración de piel, anoxia (vendajes apretados), fracaso del objetivo.</p>
+            <p data-lang="en" style="display:none;">Complications: Blisters from rubbing, pain/tingling from excessive compression, distal edema/anoxia, necrotic ulcers, joint stiffness, skin ulceration, anoxia (tight bandages), objective failure.</p>
+
+            <h3><span data-lang="es">Taller 2: Control Signos Vitales</span><span data-lang="en" style="display:none;">Workshop 2: Vital Signs Monitoring</span></h3>
+            <p data-lang="es">Señales para evaluar estado hemodinámico y metabólico.</p>
+            <p data-lang="en" style="display:none;">Signals to evaluate hemodynamic and metabolic status.</p>
+            <ul>
+                <li data-lang="es">Funcionamiento cardiovascular.</li>
+                <li data-lang="en" style="display:none;">Cardiovascular function.</li>
+                <li data-lang="es">Frecuencia cardíaca (pulso).</li>
+                <li data-lang="en" style="display:none;">Heart rate (pulse).</li>
+                <li data-lang="es">Presión arterial.</li>
+                <li data-lang="en" style="display:none;">Blood pressure.</li>
+                <li data-lang="es">Temperatura corporal.</li>
+                <li data-lang="en" style="display:none;">Body temperature.</li>
+                <li data-lang="es">Frecuencia respiratoria.</li>
+                <li data-lang="en" style="display:none;">Respiratory rate.</li>
+            </ul>
+            <h4><span data-lang="es">Frecuencia Cardíaca:</span><span data-lang="en" style="display:none;">Heart Rate:</span></h4>
+            <p data-lang="es">Número de contracciones cardíacas por minuto. Controlar en arterias distales o directamente sobre corazón.</p>
+            <p data-lang="en" style="display:none;">Number of heart contractions per minute. Monitor in distal arteries or directly over the heart.</p>
+            <p data-lang="es">Observar: Número, ritmo (irregular), fuerza.</p>
+            <p data-lang="en" style="display:none;">Observe: Number, rhythm (irregular), strength.</p>
+            <p data-lang="es">Dónde controlar: Sobre corazón, en arterias (Carótida, Humeral, Radial, Inguinal, Poplítea, Pedia).</p>
+            <p data-lang="en" style="display:none;">Where to monitor: Over the heart, in arteries (Carotid, Humeral, Radial, Inguinal, Popliteal, Pedal).</p>
+            <p data-lang="es">Técnica: Presionar con dedos índice, medio, anular sobre arteria contra hueso. Contar pulsos en un minuto. Registrar.</p>
+            <p data-lang="en" style="display:none;">Technique: Press with index, middle, and ring fingers over the artery against the bone. Count pulses for one minute. Record.</p>
+            <ul>
+                <li data-lang="es">Pulso > 100 x': Taquicardia.</li>
+                <li data-lang="en" style="display:none;">Pulse > 100 bpm: Tachycardia.</li>
+                <li data-lang="es">Pulso < 50 x': Bradicardia.</li>
+                <li data-lang="en" style="display:none;">Pulse < 50 bpm: Bradycardia.</li>
+                <li data-lang="es">Pulso irregular: Arritmias.</li>
+                <li data-lang="en" style="display:none;">Irregular pulse: Arrhythmias.</li>
+            </ul>
+            <h4><span data-lang="es">Tensión o Presión Arterial:</span><span data-lang="en" style="display:none;">Blood Pressure:</span></h4>
+            <p data-lang="es">Fuerza de sangre contra paredes arteriales.</p>
+            <p data-lang="en" style="display:none;">Force of blood against arterial walls.</p>
+            <ul>
+                <li data-lang="es"><strong>Sistólica:</strong> Punto culminante de pulsación (sístole).</li>
+                <li data-lang="en" style="display:none;"><strong>Systolic:</strong> Peak of pulsation (systole).</li>
+                <li data-lang="es"><strong>Diastólica:</strong> Punto más bajo de pulsación (diástole ventricular).</li>
+                <li data-lang="en" style="display:none;"><strong>Diastolic:</strong> Lowest point of pulsation (ventricular diastole).</li>
+            </ul>
+            <p data-lang="es">Dónde controlar: Arteria humeral o femoral.</p>
+            <p data-lang="en" style="display:none;">Where to monitor: Humeral or femoral artery.</p>
+            <p data-lang="es">Técnica: Paciente cómodo, cubrir brazo con manguito. Auscultar arteria braquial. Inflar manguito a 200 mmHg. Desinflar lento, registrar primera pulsación (sistólica) y cuando deja de sentir (diastólica).</p>
+            <p data-lang="en" style="display:none;">Technique: Patient comfortable, cover arm with cuff. Auscultate brachial artery. Inflate cuff to 200 mmHg. Deflate slowly, record first pulsation (systolic) and when sensation stops (diastolic).</p>
+            <h4><span data-lang="es">Temperatura Corporal:</span><span data-lang="en" style="display:none;">Body Temperature:</span></h4>
+            <p data-lang="es">Equilibrio entre calor producido y perdido. Normal $37.5^{\circ}C$. Varía por actividad, edad, emociones, enfermedades.</p>
+            <p data-lang="en" style="display:none;">Balance between heat produced and lost. Normal $37.5^{\circ}C$. Varies by activity, age, emotions, diseases.</p>
+            <ul>
+                <li data-lang="es"><strong>Fiebre:</strong> > $38.5^{\circ}C$.</li>
+                <li data-lang="en" style="display:none;"><strong>Fever:</strong> > $38.5^{\circ}C$.</li>
+                <li data-lang="es"><strong>Hipotermia:</strong> < $35.0^{\circ}C$.</li>
+                <li data-lang="en" style="display:none;"><strong>Hypothermia:</strong> < $35.0^{\circ}C$.</li>
+            </ul>
+            <p data-lang="es">Se mide con termómetro clínico.</p>
+            <p data-lang="en" style="display:none;">Measured with a clinical thermometer.</p>
+            <p data-lang="es">Técnica: Paciente en reposo. Bajar mercurio. Limpiar termómetro. Colocar en sitio escogido (bulbo cubierto sin contacto con aire), esperar 8 minutos. Leer y registrar.</p>
+            <p data-lang="en" style="display:none;">Technique: Patient at rest. Lower mercury. Clean thermometer. Place in chosen site (bulb covered without air contact), wait 8 minutes. Read and record.</p>
+            <h4><span data-lang="es">Frecuencia Respiratoria:</span><span data-lang="en" style="display:none;">Respiratory Rate:</span></h4>
+            <p data-lang="es">Llevar oxígeno de atmósfera a célula. Vital evaluar en todo accidentado con compromiso de conciencia/respiración.</p>
+            <p data-lang="en" style="display:none;">Transport oxygen from atmosphere to cell. Vital to evaluate in every injured person with altered consciousness/respiration.</p>
+            <p data-lang="es">Observar: Número de ventilaciones por minuto, si es superficial/ruidosa/rítmica, cuerpos extraños, secreciones.</p>
+            <p data-lang="en" style="display:none;">Observe: Number of ventilations per minute, if shallow/noisy/rhythmic, foreign bodies, secretions.</p>
+            <ul>
+                <li data-lang="es"><strong>Eupnea:</strong> Normal (18 resp/min promedio).</li>
+                <li data-lang="en" style="display:none;"><strong>Eupnea:</strong> Normal (18 breaths/min average).</li>
+                <li data-lang="es"><strong>Polipnea:</strong> Aumento de frecuencia.</li>
+                <li data-lang="en" style="display:none;"><strong>Polypnea:</strong> Increased frequency.</li>
+                <li data-lang="es"><strong>Disnea:</strong> Dificultad para respirar.</li>
+                <li data-lang="en" style="display:none;"><strong>Dyspnea:</strong> Difficulty breathing.</li>
+                <li data-lang="es"><strong>Taquipnea:</strong> Rápida (>20/minuto).</li>
+                <li data-lang="en" style="display:none;"><strong>Tachypnea:</strong> Rapid (>20/minute).</li>
+                <li data-lang="es"><strong>Bradipnea:</strong> Lenta (<10/minuto).</li>
+                <li data-lang="en" style="display:none;"><strong>Bradypnea:</strong> Slow (<10/minute).</li>
+                <li data-lang="es"><strong>Apnea:</strong> Paro respiratorio.</li>
+                <li data-lang="en" style="display:none;"><strong>Apnea:</strong> Respiratory arrest.</li>
+            </ul>
+            <p data-lang="es">Técnica: Con reloj, contar inspiraciones en un minuto. Registrar frecuencia, ritmo, profundidad, ruidos, movimientos nasales/torácicos/abdominales.</p>
+            <p data-lang="en" style="display:none;">Technique: With a watch, count inspirations in one minute. Record frequency, rhythm, depth, sounds, nasal/thoracic/abdominal movements.</p>
+
+            <h3><span data-lang="es">Taller 3: Despeje de Vía Aérea</span><span data-lang="en" style="display:none;">Workshop 3: Airway Clearance</span></h3>
+            <p data-lang="es">Inconsciencia = presunción de paro cardiorrespiratorio. Primero: despeje de vía aérea.</p>
+            <p data-lang="en" style="display:none;">Unconsciousness = presumption of cardiorespiratory arrest. First: airway clearance.</p>
+            <h4><span data-lang="es">Pasos:</span><span data-lang="en" style="display:none;">Steps:</span></h4>
+            <ol>
+                <li data-lang="es">Víctima en decúbito supino.</li>
+                <li data-lang="en" style="display:none;">Victim in supine position.</li>
+                <li data-lang="es">Despeje de vía aérea:
+                    <ul>
+                        <li data-lang="es"><strong>Elevación del mentón:</strong> Dedo pulgar dentro boca, agarrar mentón, elevar para levantar partes blandas (lengua).</li>
+                        <li data-lang="en" style="display:none;"><strong>Chin lift:</strong> Thumb inside mouth, grasp chin, lift to raise soft tissues (tongue).</li>
+                        <li data-lang="es"><strong>Tracción de la mandíbula:</strong> Hacia adelante, casi a subluxación, levanta partes blandas.</li>
+                        <lang data-en style="display:none;">Jaw thrust: Forward, almost to subluxation, lifts soft tissues.</li>
+                        <li data-lang="es"><strong>Limpiar cuerpos extraños/secreciones:</strong> Con uno/dos dedos envueltos en pañuelo, extraer por arrastre.</li>
+                        <lang data-en style="display:none;">Clear foreign bodies/secretions: With one/two fingers wrapped in a handkerchief, remove by sweeping.</li>
+                    </ul>
+                </li>
+            </ol>
+            <p class="warning" data-lang="es">NOTA: Este despeje NO debe durar más de 15 segundos.</p>
+            <p class="warning" data-lang="en" style="display:none;">NOTE: This clearance should NOT last more than 15 seconds.</p>
+            <p data-lang="es">Mantener vía aérea despejada para ventilar pulmones.</p>
+            <p data-lang="en" style="display:none;">Maintain clear airway to ventilate lungs.</p>
+
+            <h3><span data-lang="es">Taller 4: Botiquín de Primeros Auxilios</span><span data-lang="en" style="display:none;">Workshop 4: First Aid Kit</span></h3>
+            <p data-lang="es">Mueble fijo o portátil con elementos indispensables de rápida y sencilla aplicación.</p>
+            <p data-lang="en" style="display:none;">Fixed or portable cabinet with essential elements for quick and easy application.</p>
+            <h4><span data-lang="es">a) Características:</span><span data-lang="en" style="display:none;">a) Characteristics:</span></h4>
+            <ul>
+                <li data-lang="es">Completo, no atiborrado de peligrosos.</li>
+                <li data-lang="en" style="display:none;">Complete, not cluttered with dangerous items.</li>
+                <li data-lang="es">Acceso fácil, ubicado y protegido.</li>
+                <li data-lang="en" style="display:none;">Easy access, located and protected.</li>
+                <li data-lang="es">Lista de stock para reabastecer.</li>
+                <li data-lang="en" style="display:none;">Stock list for restocking.</li>
+                <li data-lang="es">Resumen de antídotos y procedimientos eficaces.</li>
+                <li data-lang="en" style="display:none;">Summary of antidotes and effective procedures.</li>
+                <li data-lang="es">Diagrama e instrucciones para RCP externa.</li>
+                <li data-lang="en" style="display:none;">Diagram and instructions for external CPR.</li>
+            </ul>
+            <h4><span data-lang="es">b) Componentes:</span><span data-lang="en" style="display:none;">b) Components:</span></h4>
+            <ul>
+                <li data-lang="es">Antisépticos, suero fisiológico/agua oxigenada, apósitos, vendas (diferentes tamaños), férulas, pañuelo cuadrado, liga de goma, pañuelos/toallas desechables, tela adhesiva, recipiente tipo "riñón".</li>
+                <li data-lang="en" style="display:none;">Antiseptics, physiological saline/hydrogen peroxide, dressings, bandages (different sizes), splints, square handkerchief, rubber band, disposable handkerchiefs/towels, adhesive tape, kidney-shaped basin.</li>
+            </ul>
+            <h4><span data-lang="es">c) Procedimiento:</span><span data-lang="en" style="display:none;">c) Procedure:</span></h4>
+            <ol>
+                <li data-lang="es">Definir peligros en lugar de botiquín.</li>
+                <li data-lang="en" style="display:none;">Define dangers where the first aid kit is located.</li>
+                <li data-lang="es">Definir persona responsable de abastecimiento y chequeo.</li>
+                <li data-lang="en" style="display:none;">Define person responsible for stocking and checking.</li>
+                <li data-lang="es">Diseñar cartilla de procedimientos.</li>
+                <li data-lang="en" style="display:none;">Design procedure chart.</li>
+                <li data-lang="es">Listado inventario.</li>
+                <li data-lang="en" style="display:none;">Inventory list.</li>
+            </ol>
+
+            <h3><span data-lang="es">Taller 5: Procedimiento de Reanimación Cardiopulmonar (RCP)</span><span data-lang="en" style="display:none;">Workshop 5: Cardiopulmonary Resuscitation (CPR) Procedure</span></h3>
+            <p data-lang="es">Combinación de ventilación y masaje cardíaco.</p>
+            <p data-lang="en" style="display:none;">Combination of ventilation and cardiac massage.</p>
+            <h4><span data-lang="es">a) Con un operador:</span><span data-lang="en" style="display:none;">a) With one operator:</span></h4>
+            <ul>
+                <li data-lang="es">2 ventilaciones profundas.</li>
+                <li data-lang="en" style="display:none;">2 deep ventilations.</li>
+                <li data-lang="es">15 compresiones torácicas (masajes).</li>
+                <li data-lang="en" style="display:none;">15 chest compressions (massages).</li>
+                <li data-lang="es">Resumen: 2 por 15.</li>
+                <li data-lang="en" style="display:none;">Summary: 2 by 15.</li>
+            </ul>
+            <h4><span data-lang="es">b) Con dos operadores:</span><span data-lang="en" style="display:none;">b) With two operators:</span></h4>
+            <ul>
+                <li data-lang="es">Operador A: 2 ventilaciones.</li>
+                <li data-lang="en" style="display:none;">Operator A: 2 ventilations.</li>
+                <li data-lang="es">Operador B: 5 masajes.</li>
+                <li data-lang="en" style="display:none;">Operator B: 5 massages.</li>
+                <li data-lang="es">Operador A: 1 ventilación.</li>
+                <li data-lang="en" style="display:none;">Operator A: 1 ventilation.</li>
+                <li data-lang="es">Operador B: 5 masajes.</li>
+                <li data-lang="en" style="display:none;">Operator B: 5 massages.</li>
+                <li data-lang="es">Resumen: 1 por 5. Seguir hasta intercambiar roles.</li>
+                <li data-lang="en" style="display:none;">Summary: 1 by 5. Continue until roles are exchanged.</li>
+            </ul>
+            <h4><span data-lang="es">Procedimiento general de RCP (A-B-C):</span><span data-lang="en" style="display:none;">General CPR procedure (A-B-C):</span></h4>
+            <ol>
+                <li data-lang="es"><strong>A - Evaluar estado de conciencia:</strong> "¿Cómo está usted?", palmotear mejilla, subir/soltar extremidad superior. En 3 segundos.</li>
+                <li data-lang="en" style="display:none;"><strong>A - Evaluate state of consciousness:</strong> "How are you?", slap cheek, raise/release upper limb. In 3 seconds.</li>
+                <li data-lang="es"><strong>B - Abrir vías aéreas:</strong> Elevar mentón, traccionar mandíbula, limpiar cuerpos extraños/secreciones. 2-5 segundos.</li>
+                <li data-lang="en" style="display:none;"><strong>B - Open airways:</strong> Chin lift, jaw thrust, clear foreign bodies/secreations. 2-5 seconds.</li>
+                <li data-lang="es"><strong>Evaluar respiración:</strong> Mirar/sentir/escuchar flujo de aire, ruidos anormales. 3-5 segundos.</li>
+                <li data-lang="en" style="display:none;"><strong>Evaluate breathing:</strong> Look/feel/listen for airflow, abnormal sounds. 3-5 seconds.</li>
+                <li data-lang="es"><strong>Apoyar la ventilación:</strong> Dos soplos lentos/profundos boca a boca (o boca a nariz, boca a boca-nariz). Evaluar expansión tórax. Niños pequeños: un soplo. 12-14 segundos. Mantener nariz cerrada.</li>
+                <li data-lang="en" style="display:none;"><strong>Support ventilation:</strong> Two slow/deep breaths mouth-to-mouth (or mouth-to-nose, mouth-to-mouth-nose). Evaluate chest expansion. Small children: one breath. 12-14 seconds. Keep nose closed.</li>
+                <li data-lang="es"><strong>C - Evaluar la circulación:</strong> Palpar pulso carotídeo (adultos), pezón mamario izquierdo (niños). 5-10 segundos.</li>
+                <li data-lang="en" style="display:none;"><strong>C - Evaluate circulation:</strong> Palpate carotid pulse (adults), left nipple (children). 5-10 seconds.</li>
+                <li data-lang="es"><strong>Ejecutar masaje cardíaco:</strong> Ubicar manos, 15 masajes (adultos), 5 masajes (niños). Dos soplos (adultos), un soplo (niños). Reevaluar pulsos, pupilas, perfusión cutánea cada 10-15 minutos.</li>
+                <li data-lang="en" style="display:none;"><strong>Perform cardiac massage:</strong> Position hands, 15 massages (adults), 5 massages (children). Two breaths (adults), one breath (children). Re-evaluate pulses, pupils, skin perfusion every 10-15 minutes.</li>
+            </ol>
+        </section>
+    </div>
+
+    <footer>
+        <p data-lang="es">&copy; 2025 ACHS. Todos los derechos reservados.</p>
+        <p data-lang="en" style="display:none;">&copy; 2025 ACHS. All rights reserved.</p>
+        <p><a href="https://www.achs.cl" target="_blank">www.achs.cl</a></p>
+    </footer>
+
+    <script>
+        let currentLang = 'es';
+
+        function toggleLanguage() {
+            currentLang = (currentLang === 'es') ? 'en' : 'es';
+            updateContentLanguage();
+        }
+
+        function updateContentLanguage() {
+            document.querySelectorAll('[data-lang]').forEach(element => {
+                if (element.getAttribute('data-lang') === currentLang) {
+                    element.style.display = '';
+                } else {
+                    element.style.display = 'none';
+                }
+            });
+
+            // Specific handling for list items where the language attribute is on the li itself
+            document.querySelectorAll('li[data-lang="es"]').forEach(li => {
+                if (currentLang === 'es') {
+                    li.style.display = 'list-item';
+                } else {
+                    li.style.display = 'none';
+                }
+            });
+            document.querySelectorAll('li[data-lang="en"]').forEach(li => {
+                if (currentLang === 'en') {
+                    li.style.display = 'list-item';
+                } else {
+                    li.style.display = 'none';
+                }
+            });
+        }
+
+        // Initial content load
+        document.addEventListener('DOMContentLoaded', updateContentLanguage);
+    </script>
+</body>
+</html>
