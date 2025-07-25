@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeros Auxilios - Guía ACHS</title>
+    <title id="pageTitle">Guía de Primeros Auxilios</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #FFF3E0; /* Light Orange Background */
             color: #333;
             line-height: 1.6;
         }
         header {
-            background-color: #007bff;
+            background-color: #FF7043; /* Orange Header */
             color: white;
             padding: 20px 0;
             text-align: center;
@@ -34,7 +34,7 @@
             right: 20px;
         }
         .lang-switch button {
-            background-color: #28a745;
+            background-color: #FF5722; /* Darker Orange Button */
             color: white;
             border: none;
             padding: 10px 15px;
@@ -55,7 +55,7 @@
             list-style: none;
             padding: 0;
             text-align: center;
-            background-color: #eee;
+            background-color: #FFE0B2; /* Lighter Orange Nav */
             padding: 10px 0;
             border-radius: 5px;
             margin-bottom: 20px;
@@ -66,36 +66,36 @@
         }
         nav ul li a {
             text-decoration: none;
-            color: #007bff;
+            color: #FF5722; /* Darker Orange Nav Link */
             font-weight: bold;
             padding: 5px 10px;
             border-radius: 3px;
             transition: background-color 0.3s ease;
         }
         nav ul li a:hover {
-            background-color: #007bff;
+            background-color: #FF5722; /* Darker Orange Nav Link Hover */
             color: white;
         }
         section {
             margin-bottom: 40px;
             padding: 20px;
-            border: 1px solid #ddd;
+            border: 1px solid #FFCC80; /* Light Orange Border */
             border-radius: 8px;
             background-color: #fff;
         }
         h2 {
-            color: #0056b3;
-            border-bottom: 2px solid #0056b3;
+            color: #E65100; /* Dark Orange Heading */
+            border-bottom: 2px solid #E65100; /* Dark Orange Border */
             padding-bottom: 10px;
             margin-top: 0;
             font-size: 1.8em;
         }
         h3 {
-            color: #0069d9;
+            color: #FB8C00; /* Medium Orange Heading */
             font-size: 1.4em;
         }
         h4 {
-            color: #0056b3;
+            color: #FF9800; /* Another Orange Shade Heading */
             font-size: 1.2em;
         }
         ul {
@@ -107,39 +107,43 @@
             margin-left: 20px;
         }
         .rpp-section {
-            background-color: #d4edda;
-            border-color: #28a745;
+            background-color: #FFECB3; /* Very light orange for RCP section */
+            border-color: #FFB300; /* Yellow-Orange border */
             padding: 25px;
             margin-top: 30px;
         }
         .rpp-section h2 {
-            color: #155724;
-            border-color: #155724;
+            color: #F57C00; /* Darker orange for RCP heading */
+            border-color: #F57C00;
         }
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #333;
+            background-color: #FF5722; /* Darker Orange Footer */
             color: white;
             margin-top: 40px;
         }
-        .image-container {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        .image-placeholder {
+            width: 80px;
+            height: 80px;
+            background-color: #FFD54F; /* Yellow-orange for images */
+            border: 1px solid #FFA000; /* Darker yellow-orange border */
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            color: #E65100; /* Dark orange text */
+            margin: 10px auto;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         .warning {
-            color: #dc3545;
+            color: #FF3D00; /* Red-Orange warning */
             font-weight: bold;
         }
         .info-box {
-            background-color: #e9f5ff;
-            border-left: 5px solid #007bff;
+            background-color: #FFF8E1; /* Pale yellow for info box */
+            border-left: 5px solid #FFB300; /* Yellow-Orange border */
             padding: 15px;
             margin: 15px 0;
             border-radius: 4px;
@@ -151,8 +155,8 @@
         <div class="lang-switch">
             <button onclick="toggleLanguage()">English / Español</button>
         </div>
-        <h1 data-lang="es">Guía de Primeros Auxilios ACHS</h1>
-        <h1 data-lang="en" style="display:none;">ACHS First Aid Guide</h1>
+        <h1 data-lang="es">Guía de Primeros Auxilios</h1>
+        <h1 data-lang="en" style="display:none;">First Aid Guide</h1>
     </header>
 
     <div class="container">
@@ -176,6 +180,7 @@
         <section id="introduccion">
             <h2 data-lang="es">Introducción</h2>
             <h2 data-lang="en" style="display:none;">Introduction</h2>
+            <div class="image-placeholder">ℹ️</div>
             <p data-lang="es">A diario enfrentamos diversas situaciones, algunas más difíciles que otras, para las cuales debemos tener una respuesta apropiada. La falta de preparación puede llevar a respuestas improvisadas e incompletas. La máxima emergencia individual es el Paro Cardiorrespiratorio, donde una acción incorrecta o la inacción resultan en la muerte en menos de cinco minutos.</p>
             <p data-lang="en" style="display:none;">Daily we face diverse situations, some more difficult than others, for which we must have an appropriate response. Lack of preparation can lead to improvised and incomplete responses. The ultimate individual emergency is Cardiorespiratory Arrest, where incorrect action or inaction results in death in less than five minutes.</p>
         </section>
@@ -183,6 +188,7 @@
         <section id="generalidades">
             <h2 data-lang="es">Capítulo I: Generalidades</h2>
             <h2 data-lang="en" style="display:none;">Chapter I: Generalities</h2>
+            <div class="image-placeholder">⚠️</div>
             <h3><span data-lang="es">TRAUMA</span><span data-lang="en" style="display:none;">TRAUMA</span></h3>
             <p data-lang="es">El trauma se define como una situación en la que un individuo, debido a violencia externa, sufre lesiones que pueden comprometer uno o más sistemas orgánicos, ocasionando apremio vital. Es la tercera causa de mortalidad general en Chile, la primera causa de hospitalización en hombres, y la primera causa de muerte en personas en edad productiva (15 a 50 años). La mayoría de los accidentes ocurren en el hogar.</p>
             <p data-lang="en" style="display:none;">Trauma is defined as a situation in which an individual, due to external violence, suffers injuries that can compromise one or more organic systems, causing vital distress. It is the third cause of general mortality in Chile, the first cause of hospitalization in men, and the first cause of death in people of productive age (15 to 50 years). Most accidents occur at home.</p>
@@ -315,6 +321,7 @@
         <section id="lesiones-traumaticas">
             <h2 data-lang="es">Capítulo II: Lesiones Traumáticas</h2>
             <h2 data-lang="en" style="display:none;">Chapter II: Traumatic Injuries</h2>
+            <div class="image-placeholder">🤕</div>
             <p data-lang="es">A diario, la violencia externa puede causar lesiones físicas. Se estudian separadamente: lesiones de partes blandas, lesiones de partes duras, politraumatismos.</p>
             <p data-lang="en" style="display:none;">Daily, external violence can cause physical injuries. They are studied separately: soft tissue injuries, hard tissue injuries, polytrauma.</p>
             
@@ -365,7 +372,7 @@
             <h4><span data-lang="es">Clasificación:</span><span data-lang="en" style="display:none;">Classification:</span></h4>
             <ul>
                 <li data-lang="es">Contusas, Cortantes, Punzantes, Atriciones, Mixtas, Quemaduras, A bala o arma de fuego, Erosivas o abrasivas.</li>
-                <lang data-en style="display:none;">Contusions, Cutting, Punctures, Attritions, Mixed, Burns, Gunshot or firearm, Erosive or abrasive.</li>
+                <li data-lang="en" style="display:none;">Contusions, Cutting, Punctures, Attritions, Mixed, Burns, Gunshot or firearm, Erosive or abrasive.</li>
                 <li data-lang="es">Pueden ser superficiales, profundas, simples o complicadas.</li>
                 <li data-lang="en" style="display:none;">Can be superficial, deep, simple or complicated.</li>
             </ul>
@@ -380,22 +387,22 @@
                 <li data-lang="es"><strong>Compresiva:</strong> Cubrir y comprimir con apósito estéril.</li>
                 <li data-lang="en" style="display:none;"><strong>Compressive:</strong> Cover and compress with sterile dressing.</li>
                 <li data-lang="es"><strong>Oclusiva:</strong> Comprimir pulso proximal (arteria) o distal (vena).</li>
-                <li data-lang="en" style="display:none;"><strong>Occlusive:</strong> Compress proximal (artery) or distal (vein) pulse.</li>
+                <li data-lang="en" style="display:none;"><strong>Occlusive:</strong> Compress proximal (artery) or distal (vena).</li>
                 <li data-lang="es"><strong>Torniquete:</strong> Solo en sangramientos arteriales masivos, intermitente (15 min puesto, 3-5 min suelto).</li>
                 <li data-lang="en" style="display:none;"><strong>Tourniquet:</strong> Only for massive arterial bleeding, intermittent (15 min on, 3-5 min off).</li>
             </ul>
             <h4><span data-lang="es">Atención de heridas específicas:</span><span data-lang="en" style="display:none;">Specific wound care:</span></h4>
             <ul>
                 <li data-lang="es"><strong>Atriciones/fracturas complicadas:</strong> Hemostasia suave, inmovilizar, cubrir, trasladar.</li>
-                <lang data-en style="display:none;">Avulsions/complicated fractures: Gentle hemostasis, immobilize, cover, transport.</li>
+                <li data-lang="en" style="display:none;"><strong>Avulsions/complicated fractures:</strong> Gentle hemostasis, immobilize, cover, transport.</li>
                 <li data-lang="es"><strong>Punzantes torácicas:</strong> Cubrir y sellar, hospital.</li>
-                <lang data-en style="display:none;">Thoracic punctures: Cover and seal, hospital.</li>
+                <li data-lang="en" style="display:none;"><strong>Thoracic punctures:</strong> Cover and seal, hospital.</li>
                 <li data-lang="es"><strong>Craneo:</strong> Inmóvil, horizontal, cubrir, hospital.</li>
-                <lang data-en style="display:none;">Head: Immobilize, horizontal, cover, hospital.</li>
+                <li data-lang="en" style="display:none;"><strong>Head:</strong> Immobilize, horizontal, cover, hospital.</li>
                 <li data-lang="es"><strong>Craneo con pérdida de conciencia:</strong> SOLO cubrir, llamar ambulancia.</li>
-                <lang data-en style="display:none;">Head with loss of consciousness: ONLY cover, call ambulance.</li>
+                <li data-lang="en" style="display:none;"><strong>Head with loss of consciousness:</strong> ONLY cover, call ambulance.</li>
                 <li data-lang="es"><strong>Bala:</strong> SOLO cubrir, traslado urgente.</li>
-                <lang data-en style="display:none;">Gunshot: ONLY cover, urgent transport.</li>
+                <li data-lang="en" style="display:none;"><strong>Gunshot:</strong> ONLY cover, urgent transport.</li>
             </ul>
 
             <h3><span data-lang="es">Técnica de curación en Primeros Auxilios</span><span data-lang="en" style="display:none;">First Aid Wound Dressing Technique</span></h3>
@@ -547,7 +554,7 @@
                 <li data-lang="es">Cubrir fracturas expuestas con material estéril.</li>
                 <li data-lang="en" style="display:none;">Cover open fractures with sterile material.</li>
                 <li data-lang="es">Dejar miembro sobre nivel del corazón para evitar edemas.</li>
-                <lang data-en style="display:none;">Keep limb above heart level to prevent edema.</li>
+                <li data-lang="en" style="display:none;">Keep limb above heart level to prevent edema.</li>
                 <li data-lang="es">Inmovilizar una articulación proximal y una distal.</li>
                 <li data-lang="en" style="display:none;">Immobilize one proximal and one distal joint.</li>
                 <li data-lang="es">Almohadillar prominencias óseas.</li>
@@ -558,6 +565,7 @@
         <section id="quemaduras">
             <h2 data-lang="es">Capítulo III: Quemaduras</h2>
             <h2 data-lang="en" style="display:none;">Chapter III: Burns</h2>
+            <div class="image-placeholder">🔥</div>
             <p data-lang="es">Pérdida de continuidad de tejidos por agentes físicos, químicos, electromagnéticos, eléctricos, radiactivos.</p>
             <p data-lang="en" style="display:none;">Loss of tissue continuity caused by physical, chemical, electromagnetic, electrical, radioactive agents.</p>
             <p data-lang="es"><strong>Agentes etiológicos:</strong> Fuego, líquidos calientes, ácidos, álcalis, frío, electricidad, radiaciones, sol.</p>
@@ -592,14 +600,12 @@
                 <li data-lang="es">Genitales: 1%</li>
                 <li data-lang="en" style="display:none;">Genitals: 1%</li>
             </ul>
-            <div class="image-container">
-                <img src="https://example.com/rule_of_nines_adult.png" alt="Rule of Nines for Adults">
-                <p data-lang="es">Regla de los 9 en adultos.</p>
-                <p data-lang="en" style="display:none;">Rule of 9s in adults.</p>
-                <img src="https://example.com/rule_of_nines_child.png" alt="Rule of Nines for Children">
-                <p data-lang="es">Regla de los 9 en niños.</p>
-                <p data-lang="en" style="display:none;">Rule of 9s in children.</p>
-            </div>
+            <div class="image-placeholder">📏</div>
+            <p data-lang="es">Regla de los 9 en adultos.</p>
+            <p data-lang="en" style="display:none;">Rule of 9s in adults.</p>
+            <div class="image-placeholder">👶</div>
+            <p data-lang="es">Regla de los 9 en niños.</p>
+            <p data-lang="en" style="display:none;">Rule of 9s in children.</p>
             <h4><span data-lang="es">c) Por localización:</span><span data-lang="en" style="display:none;">c) By location:</span></h4>
             <p data-lang="es">Cara, cabeza, cuello, manos, pies, genitales y pliegues de grandes articulaciones (rodillas, codos, axilas) comprometen funcionalidad.</p>
             <p data-lang="en" style="display:none;">Face, head, neck, hands, feet, genitals, and folds of large joints (knees, elbows, armpits) compromise functionality.</p>
@@ -695,6 +701,7 @@
         <section id="hemorragias">
             <h2 data-lang="es">Capítulo IV: Hemorragias</h2>
             <h2 data-lang="en" style="display:none;">Chapter IV: Hemorrhages</h2>
+            <div class="image-placeholder">🩸</div>
             <p data-lang="es"><strong>Definición:</strong> Salida de sangre de los vasos sanguíneos, extravasación sanguínea, pérdida anormal de sangre.</p>
             <p data-lang="en" style="display:none;"><strong>Definition:</strong> Blood leaking from blood vessels, blood extravasation, abnormal blood loss.</p>
             <h3><span data-lang="es">Clasificación:</span><span data-lang="en" style="display:none;">Classification:</span></h3>
@@ -718,13 +725,14 @@
                 <li data-lang="es"><strong>Elevación del miembro:</strong> Si la lesión es distal en una extremidad, eleve el miembro para reducir el sangramiento.</li>
                 <li data-lang="en" style="display:none;"><strong>Limb elevation:</strong> If the injury is distal on a limb, elevate the limb to reduce bleeding.</li>
                 <li data-lang="es"><strong>Torniquete:</strong> Solo en hemorragia masiva de gran arteria en extremidad inferior. Ocluir a proximal, soltar cada 10-15 minutos por 5 minutos, hasta atención de urgencia.</li>
-                <li data-lang="en" style="display:none;"><strong>Tourniquet:</strong> Only for massive arterial hemorrhage in a lower extremity. Occlude proximally, release every 10-15 minutes for 5 minutes, until emergency care.</li>
+                <li data-lang="en" style="display:none;"><strong>Tourniquet:</strong> Only for massive arterial bleeding, intermittent (15 min on, 3-5 min off).</li>
             </ul>
         </section>
 
         <section id="shock">
             <h2 data-lang="es">Capítulo V: Shock: Trastornos Hemodinámicos</h2>
             <h2 data-lang="en" style="display:none;">Chapter V: Shock: Hemodynamic Disorders</h2>
+            <div class="image-placeholder">😵</div>
             <p data-lang="es"><strong>Definición:</strong> Colapso de la circulación sanguínea con depresión de funciones vitales por descenso de presión arterial. Pérdida de relación continente-contenido.</p>
             <p data-lang="en" style="display:none;"><strong>Definition:</strong> Collapse of blood circulation with depression of vital functions due to decreased blood pressure. Loss of container-content relationship.</p>
             <h3><span data-lang="es">Clasificación:</span><span data-lang="en" style="display:none;">Classification:</span></h3>
@@ -732,9 +740,9 @@
                 <li data-lang="es"><strong>1. Central o cardiogénico:</strong> Corazón se detiene, paralizando circulación.</li>
                 <li data-lang="en" style="display:none;"><strong>1. Central or cardiogenic:</strong> Heart stops, paralyzing circulation.</li>
                 <li data-lang="es"><strong>2. Pérdida de volemia:</strong> Volumen total de sangre disminuye (anemia aguda por traumatismos, deshidratación por sudoración, insolación, quemaduras extensas).</li>
-                <li data-lang="en" style="display:none;"><strong>2. Hypovolemia:</strong> Total blood volume decreases (acute anemia due to trauma, dehydration from sweating, sunstroke, extensive burns).</li>
+                <lang data-en style="display:none;">2. Hypovolemia: Total blood volume decreases (acute anemia due to trauma, dehydration from sweating, sunstroke, extensive burns).</li>
                 <li data-lang="es"><strong>3. Dilatación del lecho vascular:</strong> Vasos sanguíneos se dilatan (golpe de calor, metabólico, impactos emocionales: temor, dolor intenso).</li>
-                <li data-lang="en" style="display:none;"><strong>3. Vasodilation:</strong> Blood vessels dilate (heatstroke, metabolic, emotional impacts: fear, intense pain).</li>
+                <lang data-en style="display:none;">3. Vasodilation: Blood vessels dilate (heatstroke, metabolic, emotional impacts: fear, intense pain).</li>
             </ul>
             <h3><span data-lang="es">Sintomatología (por falta de oxigenación):</span><span data-lang="en" style="display:none;">Symptoms (due to lack of oxygenation):</span></h3>
             <ul>
@@ -783,6 +791,7 @@
         <section id="paro-cardiorrespiratorio" class="rpp-section">
             <h2 data-lang="es">Capítulo VI: Paro Cardiorrespiratorio (RCP)</h2>
             <h2 data-lang="en" style="display:none;">Chapter VI: Cardiorespiratory Arrest (CPR)</h2>
+            <div class="image-placeholder">❤️‍🩹</div>
             <p data-lang="es">Máxima emergencia individual. El no hacer nada o hacerlo incorrectamente lleva a la muerte en 3-4 minutos. Cese de actividad cardíaca y respiratoria en personas con expectativa de vida.</p>
             <p data-lang="en" style="display:none;">Maximum individual emergency. Doing nothing or doing it incorrectly leads to death in 3-4 minutes. Cessation of cardiac and respiratory activity in people with life expectancy.</p>
             <h3><span data-lang="es">Fases del manejo:</span><span data-lang="en" style="display:none;">Management Phases:</span></h3>
@@ -907,6 +916,7 @@
         <section id="envenenamientos">
             <h2 data-lang="es">Capítulo VII: Envenenamiento e Intoxicaciones</h2>
             <h2 data-lang="en" style="display:none;">Chapter VII: Poisoning and Intoxications</h2>
+            <div class="image-placeholder">🤢</div>
             <p data-lang="es">El tóxico debe extraerse con la mayor premura. Los primeros auxilios varían según tipo de tóxico, vía de entrada, estado de conciencia, y existencia de antídoto.</p>
             <p data-lang="en" style="display:none;">The toxic substance must be removed as quickly as possible. First aid varies according to the type of toxic substance, route of entry, state of consciousness, and existence of an antidote.</p>
             <h3><span data-lang="es">Intoxicación por vía oral:</span><span data-lang="en" style="display:none;">Oral Poisoning:</span></h3>
@@ -965,12 +975,13 @@
             </ul>
             <h3><span data-lang="es">Emponzoñamientos (Picaduras y/o mordeduras):</span><span data-lang="en" style="display:none;">Envenomations (Stings and/or bites):</span></h3>
             <p data-lang="es">Acción rápida y oportuna. Causas: Accidentales (insectos, arácnidos, ofidios, peces, vegetales, hongos), Suicidios, Homicidios. Sintomatología inespecífica.</p>
-            <p data-lang="en" style="display:none;">Prompt and timely action. Causes: Accidental (insects, arachnids, snakes, fish, plants, fungi), Suicides, Homicides. Nonspecific symptoms.</p>
+            <p data-lang="en" style="display:none;">Prompt and timely action. Causes: Accidentals (insectos, arácnidos, ofidios, peces, vegetales, hongos), Suicides, Homicidios. Nonspecific symptoms.</p>
         </section>
 
         <section id="transporte">
             <h2 data-lang="es">Capítulo VIII: Estabilización y Transporte</h2>
             <h2 data-lang="en" style="display:none;">Chapter VIII: Stabilization and Transport</h2>
+            <div class="image-placeholder">🚑</div>
             <p data-lang="es">Conjunto de técnicas para transportar de forma segura a un lesionado.</p>
             <p data-lang="en" style="display:none;">Set of techniques to safely transport an injured person.</p>
             <h3><span data-lang="es">Reglas generales:</span><span data-lang="en" style="display:none;">General rules:</span></h3>
@@ -999,7 +1010,7 @@
                 <li data-lang="es"><strong>b) Movilización en bloque (paciente acostado):</strong> Camilla al lado, 3 operadores (cabeza/hombros, cintura/caderas, rodillas/pies) giran víctima sobre su eje, 4º coloca camilla, devuelven paciente. Mantener eje de columna y cuello.</li>
                 <li data-lang="en" style="display:none;"><strong>b) Block mobilization (patient lying down):</strong> Stretcher to the side, 3 operators (head/shoulders, waist/hips, knees/feet) turn victim on their axis, 4th places stretcher, return patient. Maintain spinal and neck alignment.</li>
                 <li data-lang="es"><strong>c) Silla de mano (dos operadores):</strong> Paciente de pies. Operadores se toman de muñecas y hombro, se agachan, paciente se sienta.</li>
-                <li data-lang="en" style="display:none;"><strong>c) Hand chair (two operators):</strong> Patient standing. Operators grasp wrists and shoulder, squat down, patient sits.</li>
+                <li data-lang="en" style="display:none;"><strong>c) Hand chair (dos operadores):</strong> Patient standing. Operators grasp wrists and shoulder, squat down, patient sits.</li>
             </ul>
             <h3><span data-lang="es">Vendajes:</span><span data-lang="en" style="display:none;">Bandages:</span></h3>
             <p data-lang="es">Aplicación de tela blanda a zona lesionada.</p>
@@ -1011,12 +1022,13 @@
             </ul>
             <h3><span data-lang="es">Férulas:</span><span data-lang="en" style="display:none;">Splints:</span></h3>
             <p data-lang="es">Sistema de inmovilización de uno o más segmentos corporales. Cualquier material rígido/semirrígido.</p>
-            <p data-lang="en" style="display:none;">System for immobilizing one or more body segments. Any rigid/semi-rigid material.</p>
+            <p data-lang="en" style="display:none;">System for immobilizing one or more body segments. Any material rígido/semirrígido.</p>
         </section>
 
         <section id="desastres">
             <h2 data-lang="es">Capítulo IX: Desastres</h2>
             <h2 data-lang="en" style="display:none;">Chapter IX: Disasters</h2>
+            <div class="image-placeholder">🌪️</div>
             <p data-lang="es"><strong>Definición:</strong> Crisis social extrema donde sistemas se vuelven disfuncionales, aumento súbito de demanda de recursos.</p>
             <p data-lang="en" style="display:none;"><strong>Definition:</strong> Extreme social crisis where systems become dysfunctional, sudden increase in resource demand.</p>
             <h3><span data-lang="es">Respuestas emocionales frente al desastre:</span><span data-lang="en" style="display:none;">Emotional responses to disaster:</span></h3>
@@ -1061,7 +1073,7 @@
                         <li data-lang="es"><strong>Inmediatas:</strong> Amenaza (advertencia, ansiedad, negación), Impacto (evento, desorganización, confusión, Hora Cero), Remedio/heroica (solidaridad, reacciones conductuales).</li>
                         <li data-lang="en" style="display:none;"><strong>Immediate:</strong> Threat (warning, anxiety, denial), Impact (event, disorganization, confusion, Zero Hour), Remedy/heroic (solidarity, behavioral reactions).</li>
                         <li data-lang="es"><strong>Consolidadas:</strong> Desilusión (asumir pérdidas, desesperanza), Inventario de recursos (apatía, aislamiento, depresión).</li>
-                        <li data-lang="en" style="display:none;"><strong>Consolidated:</strong> Disillusionment (accepting losses, hopelessness), Resource inventory (apathy, isolation, depression).</li>
+                        <li data-lang="en" style="display:none;"><strong>Consolidated:</strong> Disillusionment (assuming losses, hopelessness), Resource inventory (apatía, isolation, depression).</li>
                     </ul>
                 </li>
                 <li data-lang="es"><strong>DESPUÉS:</strong> Vuelta a la normalidad. Evaluación de daños, rehabilitación (reconstrucción corto/largo plazo), reanudación.</li>
@@ -1072,6 +1084,7 @@
         <section id="miscelaneas">
             <h2 data-lang="es">Capítulo X: Misceláneas</h2>
             <h2 data-lang="en" style="display:none;">Chapter X: Miscellaneous</h2>
+            <div class="image-placeholder">🌡️</div>
             <h3><span data-lang="es">Urgencias Médicas:</span><span data-lang="en" style="display:none;">Medical Emergencies:</span></h3>
             <p data-lang="es">Situación donde la vida de una persona está en crítica por problemas de resolución médica (descompensaciones de enfermedades existentes).</p>
             <p data-lang="en" style="display:none;">Situation where a person's life is critical due to medical resolution problems (decompensation of existing diseases).</p>
@@ -1130,11 +1143,11 @@
                 <li data-lang="es">Quitar ropas húmedas/ajustadas.</li>
                 <li data-lang="en" style="display:none;">Remove wet/tight clothing.</li>
                 <li data-lang="es">Retirar objetos metálicos.</li>
-                <lang data-en style="display:none;">Remove metal objects.</li>
+                <li data-lang="en" style="display:none;">Remove metal objects.</li>
                 <li data-lang="es">Proteger zonas congeladas de golpes/fricciones.</li>
-                <lang data-en style="display:none;">Protect frozen areas from blows/friction.</li>
+                <li data-lang="en" style="display:none;">Protect frozen areas from blows/friction.</li>
                 <li data-lang="es">Abrigo externo, calentamiento progresivo (no brusco).</li>
-                <lang data-en style="display:none;">External covering, gradual warming (not abrupt).</li>
+                <li data-lang="en" style="display:none;">External covering, gradual warming (no abrupt).</li>
                 <li data-lang="es">Líquidos calientes (no en exceso).</li>
                 <li data-lang="en" style="display:none;">Hot liquids (not in excess).</li>
                 <li data-lang="es">Traslado urgente.</li>
@@ -1149,6 +1162,7 @@
             <h2 data-lang="en" style="display:none;">Practical Workshops</h2>
             
             <h3><span data-lang="es">Taller 1: Técnicas de Inmovilización</span><span data-lang="en" style="display:none;">Workshop 1: Immobilization Techniques</span></h3>
+            <div class="image-placeholder">🤕🩹</div>
             <p data-lang="es">Criterios generales: No mover accidentado, inmovilizar de cabeza a pies, asignar tareas a ayudantes, usted comanda.</p>
             <p data-lang="en" style="display:none;">General criteria: Do not move the injured person, immobilize from head to toe, assign tasks to helpers, you command.</p>
             <h4><span data-lang="es">Procedimiento:</span><span data-lang="en" style="display:none;">Procedure:</span></h4>
@@ -1176,9 +1190,10 @@
             <p class="info-box" data-lang="es">Puntos a recordar: Bienestar del paciente. Dos superficies cutáneas nunca en contacto bajo vendaje.</p>
             <p class="info-box" data-lang="en" style="display:none;">Points to remember: Patient's well-being. Two skin surfaces should never be in contact under the bandage.</p>
             <p data-lang="es">Complicaciones: Flictenas por roce, dolor/hormigueo por compresión excesiva, edema/anoxia distal, escaras necróticas, rigidez articular, ulceración de piel, anoxia (vendajes apretados), fracaso del objetivo.</p>
-            <p data-lang="en" style="display:none;">Complications: Blisters from rubbing, pain/tingling from excessive compression, distal edema/anoxia, necrotic ulcers, joint stiffness, skin ulceration, anoxia (tight bandages), objective failure.</p>
+            <p data-lang="en" style="display:none;">Complications: Blisters from rubbing, pain/hormigueo por compresión excesiva, distal edema/anoxia, necrotic ulcers, joint stiffness, skin ulceration, anoxia (tight bandages), objective failure.</p>
 
             <h3><span data-lang="es">Taller 2: Control Signos Vitales</span><span data-lang="en" style="display:none;">Workshop 2: Vital Signs Monitoring</span></h3>
+            <div class="image-placeholder">📊</div>
             <p data-lang="es">Señales para evaluar estado hemodinámico y metabólico.</p>
             <p data-lang="en" style="display:none;">Signals to evaluate hemodynamic and metabolic status.</p>
             <ul>
@@ -1240,7 +1255,7 @@
             <p data-lang="es">Llevar oxígeno de atmósfera a célula. Vital evaluar en todo accidentado con compromiso de conciencia/respiración.</p>
             <p data-lang="en" style="display:none;">Transport oxygen from atmosphere to cell. Vital to evaluate in every injured person with altered consciousness/respiration.</p>
             <p data-lang="es">Observar: Número de ventilaciones por minuto, si es superficial/ruidosa/rítmica, cuerpos extraños, secreciones.</p>
-            <p data-lang="en" style="display:none;">Observe: Number of ventilations per minute, if shallow/noisy/rhythmic, foreign bodies, secretions.</p>
+            <p data-lang="en" style="display:none;">Observe: Number of ventilations per minute, if superficial/noisy/rhythmic, foreign bodies, secretions.</p>
             <ul>
                 <li data-lang="es"><strong>Eupnea:</strong> Normal (18 resp/min promedio).</li>
                 <li data-lang="en" style="display:none;"><strong>Eupnea:</strong> Normal (18 breaths/min average).</li>
@@ -1259,6 +1274,7 @@
             <p data-lang="en" style="display:none;">Technique: With a watch, count inspirations in one minute. Record frequency, rhythm, depth, sounds, nasal/thoracic/abdominal movements.</p>
 
             <h3><span data-lang="es">Taller 3: Despeje de Vía Aérea</span><span data-lang="en" style="display:none;">Workshop 3: Airway Clearance</span></h3>
+            <div class="image-placeholder">🌬️</div>
             <p data-lang="es">Inconsciencia = presunción de paro cardiorrespiratorio. Primero: despeje de vía aérea.</p>
             <p data-lang="en" style="display:none;">Unconsciousness = presumption of cardiorespiratory arrest. First: airway clearance.</p>
             <h4><span data-lang="es">Pasos:</span><span data-lang="en" style="display:none;">Steps:</span></h4>
@@ -1270,9 +1286,9 @@
                         <li data-lang="es"><strong>Elevación del mentón:</strong> Dedo pulgar dentro boca, agarrar mentón, elevar para levantar partes blandas (lengua).</li>
                         <li data-lang="en" style="display:none;"><strong>Chin lift:</strong> Thumb inside mouth, grasp chin, lift to raise soft tissues (tongue).</li>
                         <li data-lang="es"><strong>Tracción de la mandíbula:</strong> Hacia adelante, casi a subluxación, levanta partes blandas.</li>
-                        <lang data-en style="display:none;">Jaw thrust: Forward, almost to subluxation, lifts soft tissues.</li>
+                        <li data-lang="en" style="display:none;"><strong>Jaw thrust:</strong> Forward, almost to subluxation, lifts soft tissues.</li>
                         <li data-lang="es"><strong>Limpiar cuerpos extraños/secreciones:</strong> Con uno/dos dedos envueltos en pañuelo, extraer por arrastre.</li>
-                        <lang data-en style="display:none;">Clear foreign bodies/secretions: With one/two fingers wrapped in a handkerchief, remove by sweeping.</li>
+                        <li data-lang="en" style="display:none;"><strong>Clear foreign bodies/secretions:</strong> With one/two fingers wrapped in a handkerchief, remove by sweeping.</li>
                     </ul>
                 </li>
             </ol>
@@ -1282,6 +1298,7 @@
             <p data-lang="en" style="display:none;">Maintain clear airway to ventilate lungs.</p>
 
             <h3><span data-lang="es">Taller 4: Botiquín de Primeros Auxilios</span><span data-lang="en" style="display:none;">Workshop 4: First Aid Kit</span></h3>
+            <div class="image-placeholder">🩹🎒</div>
             <p data-lang="es">Mueble fijo o portátil con elementos indispensables de rápida y sencilla aplicación.</p>
             <p data-lang="en" style="display:none;">Fixed or portable cabinet with essential elements for quick and easy application.</p>
             <h4><span data-lang="es">a) Características:</span><span data-lang="en" style="display:none;">a) Characteristics:</span></h4>
@@ -1300,7 +1317,7 @@
             <h4><span data-lang="es">b) Componentes:</span><span data-lang="en" style="display:none;">b) Components:</span></h4>
             <ul>
                 <li data-lang="es">Antisépticos, suero fisiológico/agua oxigenada, apósitos, vendas (diferentes tamaños), férulas, pañuelo cuadrado, liga de goma, pañuelos/toallas desechables, tela adhesiva, recipiente tipo "riñón".</li>
-                <li data-lang="en" style="display:none;">Antiseptics, physiological saline/hydrogen peroxide, dressings, bandages (different sizes), splints, square handkerchief, rubber band, disposable handkerchiefs/towels, adhesive tape, kidney-shaped basin.</li>
+                <li data-lang="en" style="display:none;">Antiseptics, physiological saline/hydrogen peroxide, dressings, bandages (different sizes), splints, square handkerchief, rubber band, disposable handkerchiefs/to wels, adhesive tape, kidney-shaped basin.</li>
             </ul>
             <h4><span data-lang="es">c) Procedimiento:</span><span data-lang="en" style="display:none;">c) Procedure:</span></h4>
             <ol>
@@ -1315,6 +1332,7 @@
             </ol>
 
             <h3><span data-lang="es">Taller 5: Procedimiento de Reanimación Cardiopulmonar (RCP)</span><span data-lang="en" style="display:none;">Workshop 5: Cardiopulmonary Resuscitation (CPR) Procedure</span></h3>
+            <div class="image-placeholder">CPR</div>
             <p data-lang="es">Combinación de ventilación y masaje cardíaco.</p>
             <p data-lang="en" style="display:none;">Combination of ventilation and cardiac massage.</p>
             <h4><span data-lang="es">a) Con un operador:</span><span data-lang="en" style="display:none;">a) With one operator:</span></h4>
@@ -1344,7 +1362,7 @@
                 <li data-lang="es"><strong>A - Evaluar estado de conciencia:</strong> "¿Cómo está usted?", palmotear mejilla, subir/soltar extremidad superior. En 3 segundos.</li>
                 <li data-lang="en" style="display:none;"><strong>A - Evaluate state of consciousness:</strong> "How are you?", slap cheek, raise/release upper limb. In 3 seconds.</li>
                 <li data-lang="es"><strong>B - Abrir vías aéreas:</strong> Elevar mentón, traccionar mandíbula, limpiar cuerpos extraños/secreciones. 2-5 segundos.</li>
-                <li data-lang="en" style="display:none;"><strong>B - Open airways:</strong> Chin lift, jaw thrust, clear foreign bodies/secreations. 2-5 seconds.</li>
+                <li data-lang="en" style="display:none;"><strong>B - Open airways:</strong> Chin lift, jaw thrust, clear foreign bodies/secretions. 2-5 seconds.</li>
                 <li data-lang="es"><strong>Evaluar respiración:</strong> Mirar/sentir/escuchar flujo de aire, ruidos anormales. 3-5 segundos.</li>
                 <li data-lang="en" style="display:none;"><strong>Evaluate breathing:</strong> Look/feel/listen for airflow, abnormal sounds. 3-5 seconds.</li>
                 <li data-lang="es"><strong>Apoyar la ventilación:</strong> Dos soplos lentos/profundos boca a boca (o boca a nariz, boca a boca-nariz). Evaluar expansión tórax. Niños pequeños: un soplo. 12-14 segundos. Mantener nariz cerrada.</li>
@@ -1352,19 +1370,30 @@
                 <li data-lang="es"><strong>C - Evaluar la circulación:</strong> Palpar pulso carotídeo (adultos), pezón mamario izquierdo (niños). 5-10 segundos.</li>
                 <li data-lang="en" style="display:none;"><strong>C - Evaluate circulation:</strong> Palpate carotid pulse (adults), left nipple (children). 5-10 seconds.</li>
                 <li data-lang="es"><strong>Ejecutar masaje cardíaco:</strong> Ubicar manos, 15 masajes (adultos), 5 masajes (niños). Dos soplos (adultos), un soplo (niños). Reevaluar pulsos, pupilas, perfusión cutánea cada 10-15 minutos.</li>
-                <li data-lang="en" style="display:none;"><strong>Perform cardiac massage:</strong> Position hands, 15 massages (adults), 5 massages (children). Two breaths (adults), one breath (children). Re-evaluate pulses, pupils, skin perfusion every 10-15 minutes.</li>
+                <li data-lang="en" style="display:none;"><strong>Perform cardiac massage:</strong> Position hands, 15 massages (adults), 5 massages (children). Two breaths (adults), one breath (children). Re-evaluate pulsos, pupilas, perfusión cutánea cada 10-15 minutos.</li>
             </ol>
         </section>
     </div>
 
     <footer>
-        <p data-lang="es">&copy; 2025 ACHS. Todos los derechos reservados.</p>
-        <p data-lang="en" style="display:none;">&copy; 2025 ACHS. All rights reserved.</p>
-        <p><a href="https://www.achs.cl" target="_blank">www.achs.cl</a></p>
+        <p data-lang="es">&copy; Material de ACHS para uso interno de MMC.</p>
+        <p data-lang="en" style="display:none;">&copy; ACHS Material for internal use by MMC.</p>
     </footer>
 
     <script>
         let currentLang = 'es';
+
+        // Translations for title and footer slogan (updated to be generic)
+        const translations = {
+            es: {
+                pageTitle: 'Guía de Primeros Auxilios',
+                footerText: '&copy; Material de ACHS para uso interno de MMC.'
+            },
+            en: {
+                pageTitle: 'First Aid Guide',
+                footerText: '&copy; ACHS Material for internal use by MMC.'
+            }
+        };
 
         function toggleLanguage() {
             currentLang = (currentLang === 'es') ? 'en' : 'es';
@@ -1372,28 +1401,44 @@
         }
 
         function updateContentLanguage() {
-            document.querySelectorAll('[data-lang]').forEach(element => {
-                if (element.getAttribute('data-lang') === currentLang) {
-                    element.style.display = '';
-                } else {
-                    element.style.display = 'none';
+            // Update the page title
+            document.title = translations[currentLang].pageTitle;
+
+            // Update header text based on data-lang attribute
+            document.querySelector('h1[data-lang="es"]').style.display = (currentLang === 'es') ? '' : 'none';
+            document.querySelector('h1[data-lang="en"]').style.display = (currentLang === 'en') ? '' : 'none';
+
+            // Update navigation links
+            document.querySelectorAll('nav ul li a').forEach(link => {
+                link.style.display = 'none'; // Hide all links initially
+                if (link.getAttribute('data-lang') === currentLang) {
+                    link.style.display = 'inline-block';
                 }
             });
 
-            // Specific handling for list items where the language attribute is on the li itself
-            document.querySelectorAll('li[data-lang="es"]').forEach(li => {
-                if (currentLang === 'es') {
-                    li.style.display = 'list-item';
-                } else {
-                    li.style.display = 'none';
+            // Update section headings and paragraphs
+            document.querySelectorAll('h2[data-lang], h3[data-lang], h4[data-lang], p[data-lang], ul[data-lang], ol[data-lang]').forEach(element => {
+                element.style.display = 'none'; // Hide all content initially
+                if (element.getAttribute('data-lang') === currentLang) {
+                    element.style.display = (element.tagName === 'LI' || element.tagName === 'STRONG') ? 'list-item' : ''; // Handle list items specially
                 }
             });
+
+            // Update list items specifically
+            document.querySelectorAll('li[data-lang="es"]').forEach(li => {
+                li.style.display = (currentLang === 'es') ? 'list-item' : 'none';
+            });
             document.querySelectorAll('li[data-lang="en"]').forEach(li => {
-                if (currentLang === 'en') {
-                    li.style.display = 'list-item';
-                } else {
-                    li.style.display = 'none';
-                }
+                li.style.display = (currentLang === 'en') ? 'list-item' : 'none';
+            });
+
+            // Update footer text
+            document.querySelector('footer p[data-lang="es"]').style.display = (currentLang === 'es') ? '' : 'none';
+            document.querySelector('footer p[data-lang="en"]').style.display = (currentLang === 'en') ? '' : 'none';
+
+            // Ensure strong tags within translated elements are visible
+            document.querySelectorAll('[data-lang] strong').forEach(strong => {
+                strong.style.display = 'inline';
             });
         }
 
